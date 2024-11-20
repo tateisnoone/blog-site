@@ -18,15 +18,15 @@ const Header = () => {
         </div>
         <div className="flex w-40">
           <nav className="hidden md:flex space-x-4 font-sans text-base ">
-            <a className="text-gray-500 hover:text-black" href="/">
+            <a className="text-gray-500 hover:text-gray-800" href="/">
               {t("header-page.Home")}
             </a>
-            <a className="text-gray-500 hover:text-black" href="/write">
+            <a className="text-gray-500 hover:text-gray-800" href="/write">
               {t("header-page.Write")}
             </a>
-            <a className="text-gray-500 hover:text-black" href="/about">
+            <NavLink to="/about" className="text-gray-500 hover:text-gray-800">
               {t("header-page.About")}
-            </a>
+            </NavLink>
           </nav>
         </div>
         <div className="w-72 flex justify-between">

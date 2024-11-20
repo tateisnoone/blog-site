@@ -1,4 +1,3 @@
-import { PropsWithChildren } from "react";
 import {
   Card,
   CardContent,
@@ -8,18 +7,30 @@ import {
   CardTitle,
 } from "../../../../../components/ui/card";
 import img from "../../../../../assets/placeholder.svg";
+import { NavLink } from "react-router-dom";
+interface myCardProps {
+  width: string;
+}
 
-const MyCard: React.FC<PropsWithChildren> = () => {
+const MyCard: React.FC<myCardProps> = ({ width }) => {
   return (
     <>
       <div className="container lg mx-auto px-4  mt-8 mb-8 font-sans">
-        <Card className="rounded-xl border-solid border-b border-zinc-200 bg-card text-card-foreground shadow h-[480px] w-3/5 mb-5">
+        <Card
+          className={`rounded-xl border-solid border-b border-zinc-200 bg-card text-card-foreground shadow h-[480px] ${width} mb-5`}
+        >
           <CardHeader>
             <div className="w-full h-52 overflow-hidden rounded-xl mb-4">
               <img src={img} />
             </div>
             <CardTitle>The Future Of Blockchain Technology</CardTitle>
-            <CardDescription>John Doe, 2023 Jun</CardDescription>
+            <CardDescription>
+              {" "}
+              <NavLink to="/author" className="hover:underline">
+                John Doe,
+              </NavLink>{" "}
+              2023 Jun
+            </CardDescription>
           </CardHeader>
           <CardContent>
             <p className="text-lg">
@@ -33,13 +44,21 @@ const MyCard: React.FC<PropsWithChildren> = () => {
             <p className="bg-slate-300 w-23 rounded-sm">Technology</p>
           </CardFooter>
         </Card>
-        <Card className="rounded-xl border-solid border-b border-zinc-200 bg-card text-card-foreground shadow h-[480px] w-3/5 mb-5">
+        <Card
+          className={`rounded-xl border-solid border-b border-zinc-200 bg-card text-card-foreground shadow h-[480px] ${width} mb-5`}
+        >
           <CardHeader>
             <div className="w-full h-52 overflow-hidden rounded-xl mb-4">
               <img src={img} />
             </div>
             <CardTitle>The Future Of Blockchain Technology</CardTitle>
-            <CardDescription>John Doe, 2023 Jun</CardDescription>
+            <CardDescription>
+              <NavLink to="/author" className="hover:underline">
+                {" "}
+                John Doe,
+              </NavLink>{" "}
+              2023 Jun
+            </CardDescription>
           </CardHeader>
           <CardContent>
             <p className="text-lg">
@@ -53,13 +72,21 @@ const MyCard: React.FC<PropsWithChildren> = () => {
             <p className="bg-slate-300 w-23 rounded-sm">Technology</p>
           </CardFooter>
         </Card>
-        <Card className="rounded-xl border-solid border-b border-zinc-200 bg-card text-card-foreground shadow h-[480px] w-3/5 mb-5">
+        <Card
+          className={`rounded-xl border-solid border-b border-zinc-200 bg-card text-card-foreground shadow h-[480px] ${width} mb-5`}
+        >
           <CardHeader>
             <div className="w-full h-52 overflow-hidden rounded-xl mb-4">
               <img src={img} />
             </div>
             <CardTitle>The Future Of Blockchain Technology</CardTitle>
-            <CardDescription>John Doe, 2023 Jun</CardDescription>
+            <CardDescription>
+              <NavLink to="/author" className="hover:underline">
+                {" "}
+                John Doe,
+              </NavLink>{" "}
+              2023 Jun
+            </CardDescription>
           </CardHeader>
           <CardContent>
             <p className="text-lg">

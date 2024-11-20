@@ -2,10 +2,12 @@ import { Suspense } from "react";
 import "./index.css";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Dashboard from "./layout/dashboard";
-import HomeView from "./pages/home/components/views";
+import HomeView from "./pages/home/views";
 import SignIn from "./pages/sing-in/sign-in";
 import Register from "./pages/register/register";
 import { ThemeProvider } from "./components/theme-provider";
+import AboutView from "./pages/about/views";
+import AuthorView from "./pages/author/views";
 
 const App: React.FC = () => {
   return (
@@ -26,6 +28,8 @@ const App: React.FC = () => {
               />
               <Route path="sign-in" element={<SignIn />} />
               <Route path="/sign-up" element={<Register />} />
+              <Route path="/about" element={<AboutView />} />
+              <Route path="/author" element={<AuthorView />} />
             </Route>
             <Route path="/" element={<Navigate to="/" />} />
 

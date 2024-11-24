@@ -24,10 +24,12 @@ import { PostgrestSingleResponse } from "@supabase/supabase-js";
 type ProfileData = {
   avatar_url: string | null;
   full_name: string | null;
+  full_name_ge?: string | null;
   id: string;
   updated_at: string | null;
   username: string | null;
-  website: string | null;
+  website?: string | null;
+  number?: string | null;
 };
 const Header = () => {
   const { t } = useTranslation();
@@ -78,7 +80,7 @@ const Header = () => {
             <DropdownMenu>
               <DropdownMenuTrigger>
                 <Avatar>
-                  <AvatarImage src={profileData?.avatar_url} />
+                  <AvatarImage src={profileData?.avatar_url ?? undefined} />
                   <AvatarFallback>CN</AvatarFallback>
                 </Avatar>
               </DropdownMenuTrigger>

@@ -1,3 +1,3 @@
 import { atom } from "jotai";
 
-const authAtom = atom(null);
+export const userAtom = atom<any>(null);

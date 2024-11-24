@@ -9,25 +9,28 @@ import { ThemeProvider } from "./components/theme-provider";
 import AboutView from "./pages/about/views";
 import AuthorView from "./pages/author/views";
 import { supabase } from "./supabase";
-import { useAuthContext } from "./context/auth/hooks/useAuthContext";
+//import { useAuthContext } from "./context/auth/hooks/useAuthContext";
 import AuthGuard from "./components/route-guards/auth";
 import ProfileView from "./pages/profile/views";
+import { userAtom } from "./store/auth";
+import { useAtom } from "jotai";
 
 const App: React.FC = () => {
-  const { handleSetUser } = useAuthContext();
+  // const { handleSetUser } = useAuthContext();
+  const [, setUser] = useAtom(userAtom);
   useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {
-      handleSetUser(session);
+      setUser(session);
     });
 
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange((_event, session) => {
-      handleSetUser(session);
+      setUser(session);
     });
 
     return () => subscription.unsubscribe();
-  }, []);
+  }, [setUser]);
   return (
     <>
       <BrowserRouter>

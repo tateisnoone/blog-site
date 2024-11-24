@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import i18n from "i18next";
 import { ModeToggle } from "@/components/mode-toggle";
-import { useAuthContext } from "@/context/auth/hooks/useAuthContext";
+//import { useAuthContext } from "@/context/auth/hooks/useAuthContext";
 import { useMutation } from "@tanstack/react-query";
 import { logout } from "../../supabase/auth";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -15,10 +15,37 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { useAtom } from "jotai";
+import { userAtom } from "@/store/auth";
+import { useEffect, useState } from "react";
+import { getProfileInfo } from "@/supabase/profile";
+import { PostgrestSingleResponse } from "@supabase/supabase-js";
 
+type ProfileData = {
+  avatar_url: string | null;
+  full_name: string | null;
+  id: string;
+  updated_at: string | null;
+  username: string | null;
+  website: string | null;
+};
 const Header = () => {
   const { t } = useTranslation();
-  const { user } = useAuthContext();
+  const [user] = useAtom(userAtom);
+  const [profileData, setProfileData] = useState<ProfileData | null>(null);
+  useEffect(() => {
+    if (user?.user?.id) {
+      getProfileInfo(user.user.id).then(
+        (res: PostgrestSingleResponse<ProfileData[]>) => {
+          if (res.error) {
+            console.error(res.error);
+          } else if (res.data && res.data.length > 0) {
+            setProfileData(res.data[0]);
+          }
+        }
+      );
+    }
+  }, [user]);
   const { mutate: handleLogout } = useMutation({
     mutationKey: ["logout"],
     mutationFn: logout,
@@ -51,7 +78,7 @@ const Header = () => {
             <DropdownMenu>
               <DropdownMenuTrigger>
                 <Avatar>
-                  <AvatarImage src="https://github.com/shadcn.png" />
+                  <AvatarImage src={profileData?.avatar_url} />
                   <AvatarFallback>CN</AvatarFallback>
                 </Avatar>
               </DropdownMenuTrigger>

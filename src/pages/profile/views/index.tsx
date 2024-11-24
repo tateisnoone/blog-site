@@ -1,12 +1,9 @@
-import { lazy } from "react";
-const LazyProfileInfo = lazy(
-  () => import("../components/profile-info/profile-info")
-);
+import ProfileInfo from "../components/profile-info/profile-info";
 
 const ProfileView = () => {
   return (
     <>
-      <LazyProfileInfo />
+      <ProfileInfo />
     </>
   );
 };

@@ -2,13 +2,14 @@ import { FormEvent, PropsWithChildren, useState } from "react";
 import { Input } from "../../components/ui/input";
 import { Label } from "../../components/ui/label";
 import { Button } from "../../components/ui/button";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useMutation } from "@tanstack/react-query";
 import { login } from "../../supabase/auth";
 
 const SignIn: React.FC<PropsWithChildren> = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const [loginPayload, setLoginPayload] = useState({
     email: "",
     password: "",
@@ -16,6 +17,12 @@ const SignIn: React.FC<PropsWithChildren> = () => {
   const { mutate: handleLogin } = useMutation({
     mutationKey: ["login"],
     mutationFn: login,
+    onSuccess: () => {
+      navigate("/");
+    },
+    onError: (error) => {
+      console.log(error);
+    },
   });
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();

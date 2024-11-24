@@ -1,11 +1,28 @@
 import { NavLink } from "react-router-dom";
-import { Button } from "../../components/ui/button";
+import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import i18n from "i18next";
-import { ModeToggle } from "../../components/mode-toggle";
+import { ModeToggle } from "@/components/mode-toggle";
+import { useAuthContext } from "@/context/auth/hooks/useAuthContext";
+import { useMutation } from "@tanstack/react-query";
+import { logout } from "../../supabase/auth";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Header = () => {
   const { t } = useTranslation();
+  const { user } = useAuthContext();
+  const { mutate: handleLogout } = useMutation({
+    mutationKey: ["logout"],
+    mutationFn: logout,
+  });
   const handleChangeLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
   };
@@ -30,11 +47,32 @@ const Header = () => {
           </nav>
         </div>
         <div className="w-72 flex justify-between">
-          <NavLink to="sign-in">
-            <Button className="bg-blue-500 hover:bg-blue-400 text-base font-sans">
-              {t("header-page.SignIn")}
-            </Button>
-          </NavLink>
+          {user ? (
+            <DropdownMenu>
+              <DropdownMenuTrigger>
+                <Avatar>
+                  <AvatarImage src="https://github.com/shadcn.png" />
+                  <AvatarFallback>CN</AvatarFallback>
+                </Avatar>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="font-sans">
+                <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                <NavLink to="/profile">
+                  <DropdownMenuItem>Profile</DropdownMenuItem>
+                </NavLink>
+                <DropdownMenuItem onClick={() => handleLogout()}>
+                  Sign Out
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+          ) : (
+            <NavLink to="sign-in">
+              <Button className="bg-blue-500 hover:bg-blue-400 text-base font-sans">
+                {t("header-page.SignIn")}
+              </Button>
+            </NavLink>
+          )}
           <Button
             className="bg-white hover:bg-slate-300 text-black text-base font-sans"
             onClick={() => handleChangeLanguage("ge")}

@@ -1,10 +1,10 @@
-import { Button } from "../../../../components/ui/button";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardHeader,
   CardTitle,
   CardDescription,
-} from "../../../../components/ui/card";
+} from "@/components/ui/card";
 const Story = () => {
   return (
     <>

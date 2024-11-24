@@ -1,4 +1,4 @@
-import img from "../../../../assets/placeholder.svg";
+import img from "@/assets/placeholder.svg";
 const Mission = () => {
   return (
     <>

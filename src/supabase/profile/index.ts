@@ -1,7 +1,9 @@
 import { supabase } from "..";
 import { FillProfileInfoPayload } from "./index.types";
 
-export const fillProfileInfo = (payload: FillProfileInfoPayload) => {
+export const fillProfileInfo = async (
+  payload: FillProfileInfoPayload & { id: string }
+) => {
   return supabase
     .from("profiles")
     .upsert(payload as any)

@@ -45,7 +45,7 @@ const Register: React.FC<PropsWithChildren> = () => {
                 required: t("sign-up.NameRequired"),
                 minLength: {
                   value: 3,
-                  message: t("sign-up.MinLength"), 
+                  message: t("sign-up.MinLength"),
                 },
               })}
             />
@@ -53,12 +53,11 @@ const Register: React.FC<PropsWithChildren> = () => {
               <span className="text-red-500">
                 {typeof errors.name.message === "string"
                   ? errors.name.message
-                  : t("sign-up.MinLength")}
+                  : t("sign-up.InvalidEmail")}
               </span>
             )}
           </div>
 
-       
           <div className="grid w-full items-center gap-3 mb-5">
             <Label htmlFor="email" className="text-left text-slate-900">
               {t("sign-up.Email")}
@@ -69,6 +68,10 @@ const Register: React.FC<PropsWithChildren> = () => {
               placeholder="Email"
               {...register("email", {
                 required: t("sign-up.EmailRequired"),
+                pattern: {
+                  value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                  message: t("sign-up.InvalidEmail"),
+                },
               })}
             />
             {errors.email?.message && (

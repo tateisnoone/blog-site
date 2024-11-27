@@ -11,6 +11,7 @@
   "EmailRequired": "Email is required",
   "PasswordRequired": "Password is required",
   "NameRequired":"Name is required",
+  "InvalidEmail":"Email format is incorrect",
   "MinLength":"Name should cointain more than 3 characters"
 
 }

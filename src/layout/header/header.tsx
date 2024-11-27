@@ -43,6 +43,8 @@ const Header = () => {
             console.error(res.error);
           } else if (res.data && res.data.length > 0) {
             setProfileData(res.data[0]);
+            console.log("simo qalaqeli");
+            console.log("tatia yana");
           }
         }
       );

@@ -7,5 +7,10 @@
   "Confirm": "Confirm Password",
   "Sign-Up": "Sign Up",
   "HaveAccount": "Already have an account?",
-  "Sign-In": "Sign In"
+  "Sign-In": "Sign In",
+  "EmailRequired": "Email is required",
+  "PasswordRequired": "Password is required",
+  "NameRequired":"Name is required",
+  "MinLength":"Name should cointain more than 3 characters"
+
 }

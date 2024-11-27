@@ -1,6 +1,6 @@
 import { supabase } from "..";
 
-export const register = ({
+export const signUp = ({
   email,
   password,
 }: {

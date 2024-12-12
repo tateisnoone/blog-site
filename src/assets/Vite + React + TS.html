@@ -1,0 +1,2705 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5175/ -->
+<html lang="en" class="light"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./Vite + React + TS_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5175/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite + React + TS</title>
+  <style type="text/css" data-vite-dev-id="/Users/tatiadaghelashvili/Desktop/stayConnected-React/src/index.css">*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}/*
+! tailwindcss v3.4.15 | MIT License | https://tailwindcss.com
+*//*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+html,
+:host {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-feature-settings: normal; /* 5 */
+  font-variation-settings: normal; /* 6 */
+  -webkit-tap-highlight-color: transparent; /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-feature-settings: normal; /* 2 */
+  font-variation-settings: normal; /* 3 */
+  font-size: 1em; /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-feature-settings: inherit; /* 1 */
+  font-variation-settings: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  letter-spacing: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+[hidden]:where(:not([hidden="until-found"])) {
+  display: none;
+}
+
+* {
+  scrollbar-color: initial;
+  scrollbar-width: initial;
+}
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+  * {
+  border-color: hsl(var(--border));
+}
+  body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+.fixed {
+  position: fixed;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.inset-0 {
+  inset: 0px;
+}
+.bottom-0 {
+  bottom: 0px;
+}
+.left-0 {
+  left: 0px;
+}
+.left-2 {
+  left: 0.5rem;
+}
+.left-\[50\%\] {
+  left: 50%;
+}
+.right-2 {
+  right: 0.5rem;
+}
+.right-4 {
+  right: 1rem;
+}
+.top-0 {
+  top: 0px;
+}
+.top-4 {
+  top: 1rem;
+}
+.top-\[50\%\] {
+  top: 50%;
+}
+.z-10 {
+  z-index: 10;
+}
+.z-50 {
+  z-index: 50;
+}
+.m-auto {
+  margin: auto;
+}
+.-mx-1 {
+  margin-left: -0.25rem;
+  margin-right: -0.25rem;
+}
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+.mb-8 {
+  margin-bottom: 2rem;
+}
+.mb-\[13px\] {
+  margin-bottom: 13px;
+}
+.mb-\[20px\] {
+  margin-bottom: 20px;
+}
+.ml-1 {
+  margin-left: 0.25rem;
+}
+.ml-2 {
+  margin-left: 0.5rem;
+}
+.ml-auto {
+  margin-left: auto;
+}
+.mr-2 {
+  margin-right: 0.5rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
+}
+.mt-8 {
+  margin-top: 2rem;
+}
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+.mr-10 {
+  margin-right: 2.5rem;
+}
+.ml-3 {
+  margin-left: 0.75rem;
+}
+.mr-3 {
+  margin-right: 0.75rem;
+}
+.block {
+  display: block;
+}
+.flex {
+  display: flex;
+}
+.inline-flex {
+  display: inline-flex;
+}
+.grid {
+  display: grid;
+}
+.hidden {
+  display: none;
+}
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+.h-10 {
+  height: 2.5rem;
+}
+.h-12 {
+  height: 3rem;
+}
+.h-2 {
+  height: 0.5rem;
+}
+.h-20 {
+  height: 5rem;
+}
+.h-3 {
+  height: 0.75rem;
+}
+.h-3\.5 {
+  height: 0.875rem;
+}
+.h-4 {
+  height: 1rem;
+}
+.h-8 {
+  height: 2rem;
+}
+.h-9 {
+  height: 2.25rem;
+}
+.h-\[1\.2rem\] {
+  height: 1.2rem;
+}
+.h-\[1px\] {
+  height: 1px;
+}
+.h-\[250px\] {
+  height: 250px;
+}
+.h-\[var\(--radix-select-trigger-height\)\] {
+  height: var(--radix-select-trigger-height);
+}
+.h-full {
+  height: 100%;
+}
+.h-px {
+  height: 1px;
+}
+.h-16 {
+  height: 4rem;
+}
+.h-2\.5 {
+  height: 0.625rem;
+}
+.h-5 {
+  height: 1.25rem;
+}
+.h-14 {
+  height: 3.5rem;
+}
+.max-h-96 {
+  max-height: 24rem;
+}
+.max-h-\[300px\] {
+  max-height: 300px;
+}
+.min-h-\[60px\] {
+  min-height: 60px;
+}
+.w-1\/4 {
+  width: 25%;
+}
+.w-10 {
+  width: 2.5rem;
+}
+.w-12 {
+  width: 3rem;
+}
+.w-2 {
+  width: 0.5rem;
+}
+.w-2\/5 {
+  width: 40%;
+}
+.w-3 {
+  width: 0.75rem;
+}
+.w-3\.5 {
+  width: 0.875rem;
+}
+.w-3\/4 {
+  width: 75%;
+}
+.w-3\/5 {
+  width: 60%;
+}
+.w-4 {
+  width: 1rem;
+}
+.w-9 {
+  width: 2.25rem;
+}
+.w-\[1\.2rem\] {
+  width: 1.2rem;
+}
+.w-\[1px\] {
+  width: 1px;
+}
+.w-\[200px\] {
+  width: 200px;
+}
+.w-\[250px\] {
+  width: 250px;
+}
+.w-\[30\%\] {
+  width: 30%;
+}
+.w-\[350px\] {
+  width: 350px;
+}
+.w-\[60\%\] {
+  width: 60%;
+}
+.w-full {
+  width: 100%;
+}
+.w-1\/3 {
+  width: 33.333333%;
+}
+.w-16 {
+  width: 4rem;
+}
+.w-6 {
+  width: 1.5rem;
+}
+.w-2\.5 {
+  width: 0.625rem;
+}
+.w-5 {
+  width: 1.25rem;
+}
+.w-\[370px\] {
+  width: 370px;
+}
+.min-w-\[8rem\] {
+  min-width: 8rem;
+}
+.min-w-\[var\(--radix-select-trigger-width\)\] {
+  min-width: var(--radix-select-trigger-width);
+}
+.max-w-3xl {
+  max-width: 48rem;
+}
+.max-w-\[1200px\] {
+  max-width: 1200px;
+}
+.max-w-\[1400px\] {
+  max-width: 1400px;
+}
+.max-w-lg {
+  max-width: 32rem;
+}
+.max-w-md {
+  max-width: 28rem;
+}
+.flex-1 {
+  flex: 1 1 0%;
+}
+.shrink-0 {
+  flex-shrink: 0;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.translate-x-\[-50\%\] {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.translate-y-\[-50\%\] {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.rotate-0 {
+  --tw-rotate: 0deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.rotate-90 {
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.scale-0 {
+  --tw-scale-x: 0;
+  --tw-scale-y: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.scale-100 {
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+@keyframes pulse {
+
+  50% {
+    opacity: .5;
+  }
+}
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+.cursor-default {
+  cursor: default;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.touch-none {
+  touch-action: none;
+}
+.select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.items-start {
+  align-items: flex-start;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.gap-1 {
+  gap: 0.25rem;
+}
+.gap-1\.5 {
+  gap: 0.375rem;
+}
+.gap-10 {
+  gap: 2.5rem;
+}
+.gap-14 {
+  gap: 3.5rem;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
+.gap-3 {
+  gap: 0.75rem;
+}
+.gap-4 {
+  gap: 1rem;
+}
+.gap-5 {
+  gap: 1.25rem;
+}
+.gap-6 {
+  gap: 1.5rem;
+}
+.gap-7 {
+  gap: 1.75rem;
+}
+.gap-8 {
+  gap: 2rem;
+}
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-y-1\.5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.375rem * var(--tw-space-y-reverse));
+}
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+.self-center {
+  align-self: center;
+}
+.overflow-auto {
+  overflow: auto;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-visible {
+  overflow: visible;
+}
+.overflow-y-auto {
+  overflow-y: auto;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+.break-words {
+  overflow-wrap: break-word;
+}
+.rounded-full {
+  border-radius: 9999px;
+}
+.rounded-lg {
+  border-radius: var(--radius);
+}
+.rounded-md {
+  border-radius: calc(var(--radius) - 2px);
+}
+.rounded-sm {
+  border-radius: calc(var(--radius) - 4px);
+}
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+.rounded-\[inherit\] {
+  border-radius: inherit;
+}
+.border {
+  border-width: 1px;
+}
+.border-4 {
+  border-width: 4px;
+}
+.border-\[1px\] {
+  border-width: 1px;
+}
+.border-b {
+  border-bottom-width: 1px;
+}
+.border-t {
+  border-top-width: 1px;
+}
+.border-l {
+  border-left-width: 1px;
+}
+.border-solid {
+  border-style: solid;
+}
+.border-blue-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(59 130 246 / var(--tw-border-opacity, 1));
+}
+.border-gray-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity, 1));
+}
+.border-gray-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity, 1));
+}
+.border-green-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(34 197 94 / var(--tw-border-opacity, 1));
+}
+.border-input {
+  border-color: hsl(var(--input));
+}
+.border-neutral-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 229 229 / var(--tw-border-opacity, 1));
+}
+.border-transparent {
+  border-color: transparent;
+}
+.border-zinc-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(228 228 231 / var(--tw-border-opacity, 1));
+}
+.border-neutral-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(212 212 212 / var(--tw-border-opacity, 1));
+}
+.border-red-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(252 165 165 / var(--tw-border-opacity, 1));
+}
+.border-b-gray-300 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
+}
+.border-t-gray-300 {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
+}
+.border-l-transparent {
+  border-left-color: transparent;
+}
+.border-t-transparent {
+  border-top-color: transparent;
+}
+.bg-\[\#EEF2FF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 242 255 / var(--tw-bg-opacity, 1));
+}
+.bg-black\/80 {
+  background-color: rgb(0 0 0 / 0.8);
+}
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
+}
+.bg-blue-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity, 1));
+}
+.bg-card {
+  background-color: hsl(var(--card));
+}
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+}
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
+}
+.bg-gray-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
+}
+.bg-green-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity, 1));
+}
+.bg-neutral-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity, 1));
+}
+.bg-neutral-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 229 229 / var(--tw-bg-opacity, 1));
+}
+.bg-neutral-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity, 1));
+}
+.bg-neutral-900\/10 {
+  background-color: rgb(23 23 23 / 0.1);
+}
+.bg-popover {
+  background-color: hsl(var(--popover));
+}
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity, 1));
+}
+.bg-sky-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 165 233 / var(--tw-bg-opacity, 1));
+}
+.bg-slate-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity, 1));
+}
+.bg-transparent {
+  background-color: transparent;
+}
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
+}
+.bg-orange-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 146 60 / var(--tw-bg-opacity, 1));
+}
+.bg-yellow-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 224 71 / var(--tw-bg-opacity, 1));
+}
+.bg-blue-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 197 253 / var(--tw-bg-opacity, 1));
+}
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+.fill-current {
+  fill: currentColor;
+}
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-0 {
+  padding: 0px;
+}
+.p-1 {
+  padding: 0.25rem;
+}
+.p-10 {
+  padding: 2.5rem;
+}
+.p-3 {
+  padding: 0.75rem;
+}
+.p-4 {
+  padding: 1rem;
+}
+.p-5 {
+  padding: 1.25rem;
+}
+.p-6 {
+  padding: 1.5rem;
+}
+.p-8 {
+  padding: 2rem;
+}
+.p-\[14px_1px\] {
+  padding: 14px 1px;
+}
+.p-\[40px\] {
+  padding: 40px;
+}
+.p-2 {
+  padding: 0.5rem;
+}
+.p-\[1px\] {
+  padding: 1px;
+}
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.py-0\.5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.py-1\.5 {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.py-40 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.pl-2 {
+  padding-left: 0.5rem;
+}
+.pl-8 {
+  padding-left: 2rem;
+}
+.pr-10 {
+  padding-right: 2.5rem;
+}
+.pr-2 {
+  padding-right: 0.5rem;
+}
+.pr-8 {
+  padding-right: 2rem;
+}
+.pt-0 {
+  padding-top: 0px;
+}
+.pt-10 {
+  padding-top: 2.5rem;
+}
+.text-center {
+  text-align: center;
+}
+.font-sans {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-extrabold {
+  font-weight: 800;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-normal {
+  font-weight: 400;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.leading-none {
+  line-height: 1;
+}
+.leading-relaxed {
+  line-height: 1.625;
+}
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+.tracking-widest {
+  letter-spacing: 0.1em;
+}
+.text-\[\#4E53A2\] {
+  --tw-text-opacity: 1;
+  color: rgb(78 83 162 / var(--tw-text-opacity, 1));
+}
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+.text-card-foreground {
+  color: hsl(var(--card-foreground));
+}
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+}
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+}
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity, 1));
+}
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity, 1));
+}
+.text-muted-foreground {
+  color: hsl(var(--muted-foreground));
+}
+.text-neutral-50 {
+  --tw-text-opacity: 1;
+  color: rgb(250 250 250 / var(--tw-text-opacity, 1));
+}
+.text-neutral-500 {
+  --tw-text-opacity: 1;
+  color: rgb(115 115 115 / var(--tw-text-opacity, 1));
+}
+.text-neutral-900 {
+  --tw-text-opacity: 1;
+  color: rgb(23 23 23 / var(--tw-text-opacity, 1));
+}
+.text-neutral-950 {
+  --tw-text-opacity: 1;
+  color: rgb(10 10 10 / var(--tw-text-opacity, 1));
+}
+.text-popover-foreground {
+  color: hsl(var(--popover-foreground));
+}
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity, 1));
+}
+.text-red-700 {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity, 1));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+.underline-offset-4 {
+  text-underline-offset: 4px;
+}
+.opacity-50 {
+  opacity: 0.5;
+}
+.opacity-60 {
+  opacity: 0.6;
+}
+.opacity-70 {
+  opacity: 0.7;
+}
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-\[0px_-2px_4px_rgba\(0\2c 0\2c 0\2c 0\.1\)\] {
+  --tw-shadow: 0px -2px 4px rgba(0,0,0,0.1);
+  --tw-shadow-colored: 0px -2px 4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-inner {
+  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+.outline {
+  outline-style: solid;
+}
+.ring-offset-background {
+  --tw-ring-offset-color: hsl(var(--background));
+}
+.ring-offset-white {
+  --tw-ring-offset-color: #fff;
+}
+.blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.transition-shadow {
+  transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.duration-200 {
+  transition-duration: 200ms;
+}
+.duration-300 {
+  transition-duration: 300ms;
+}
+@keyframes enter {
+
+  from {
+    opacity: var(--tw-enter-opacity, 1);
+    transform: translate3d(var(--tw-enter-translate-x, 0), var(--tw-enter-translate-y, 0), 0) scale3d(var(--tw-enter-scale, 1), var(--tw-enter-scale, 1), var(--tw-enter-scale, 1)) rotate(var(--tw-enter-rotate, 0));
+  }
+}
+@keyframes exit {
+
+  to {
+    opacity: var(--tw-exit-opacity, 1);
+    transform: translate3d(var(--tw-exit-translate-x, 0), var(--tw-exit-translate-y, 0), 0) scale3d(var(--tw-exit-scale, 1), var(--tw-exit-scale, 1), var(--tw-exit-scale, 1)) rotate(var(--tw-exit-rotate, 0));
+  }
+}
+.animate-in {
+  animation-name: enter;
+  animation-duration: 150ms;
+  --tw-enter-opacity: initial;
+  --tw-enter-scale: initial;
+  --tw-enter-rotate: initial;
+  --tw-enter-translate-x: initial;
+  --tw-enter-translate-y: initial;
+}
+.duration-200 {
+  animation-duration: 200ms;
+}
+.duration-300 {
+  animation-duration: 300ms;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track);
+  border-radius: var(--scrollbar-track-radius);
+}
+.scrollbar-thin::-webkit-scrollbar-track:hover {
+  background-color: var(--scrollbar-track-hover, var(--scrollbar-track));
+}
+.scrollbar-thin::-webkit-scrollbar-track:active {
+  background-color: var(--scrollbar-track-active, var(--scrollbar-track-hover, var(--scrollbar-track)));
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: var(--scrollbar-thumb-radius);
+}
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover, var(--scrollbar-thumb));
+}
+.scrollbar-thin::-webkit-scrollbar-thumb:active {
+  background-color: var(--scrollbar-thumb-active, var(--scrollbar-thumb-hover, var(--scrollbar-thumb)));
+}
+.scrollbar-thin::-webkit-scrollbar-corner {
+  background-color: var(--scrollbar-corner);
+  border-radius: var(--scrollbar-corner-radius);
+}
+.scrollbar-thin::-webkit-scrollbar-corner:hover {
+  background-color: var(--scrollbar-corner-hover, var(--scrollbar-corner));
+}
+.scrollbar-thin::-webkit-scrollbar-corner:active {
+  background-color: var(--scrollbar-corner-active, var(--scrollbar-corner-hover, var(--scrollbar-corner)));
+}
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb, initial) var(--scrollbar-track, initial);
+}
+.scrollbar-thin::-webkit-scrollbar {
+  display: block;
+  width: 8px;
+  height: 8px;
+}
+.scrollbar-track-transparent {
+  --scrollbar-track: transparent !important;
+}
+.scrollbar-thumb-blue-500 {
+  --scrollbar-thumb: #3b82f6 !important;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.file\:border-0::file-selector-button {
+  border-width: 0px;
+}
+.file\:bg-transparent::file-selector-button {
+  background-color: transparent;
+}
+.file\:text-sm::file-selector-button {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.file\:font-medium::file-selector-button {
+  font-weight: 500;
+}
+.file\:text-neutral-950::file-selector-button {
+  --tw-text-opacity: 1;
+  color: rgb(10 10 10 / var(--tw-text-opacity, 1));
+}
+.placeholder\:text-muted-foreground::-moz-placeholder {
+  color: hsl(var(--muted-foreground));
+}
+.placeholder\:text-muted-foreground::placeholder {
+  color: hsl(var(--muted-foreground));
+}
+.placeholder\:text-neutral-500::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(115 115 115 / var(--tw-text-opacity, 1));
+}
+.placeholder\:text-neutral-500::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(115 115 115 / var(--tw-text-opacity, 1));
+}
+.last\:border-none:last-child {
+  border-style: none;
+}
+.focus-within\:ring-2:focus-within {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+.focus-within\:ring-ring:focus-within {
+  --tw-ring-color: hsl(var(--ring));
+}
+.focus-within\:ring-offset-2:focus-within {
+  --tw-ring-offset-width: 2px;
+}
+.peer:disabled ~ .peer-disabled\:cursor-not-allowed {
+  cursor: not-allowed;
+}
+.peer:disabled ~ .peer-disabled\:opacity-70 {
+  opacity: 0.7;
+}
+.data-\[disabled\=true\]\:pointer-events-none[data-disabled="true"] {
+  pointer-events: none;
+}
+.data-\[disabled\]\:pointer-events-none[data-disabled] {
+  pointer-events: none;
+}
+.data-\[side\=bottom\]\:translate-y-1[data-side="bottom"] {
+  --tw-translate-y: 0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.data-\[side\=left\]\:-translate-x-1[data-side="left"] {
+  --tw-translate-x: -0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.data-\[side\=right\]\:translate-x-1[data-side="right"] {
+  --tw-translate-x: 0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.data-\[side\=top\]\:-translate-y-1[data-side="top"] {
+  --tw-translate-y: -0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.data-\[selected\=true\]\:bg-neutral-100[data-selected="true"] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity, 1));
+}
+.data-\[state\=active\]\:bg-white[data-state="active"] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+.data-\[state\=open\]\:bg-neutral-100[data-state="open"] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity, 1));
+}
+.data-\[selected\=true\]\:text-neutral-900[data-selected="true"] {
+  --tw-text-opacity: 1;
+  color: rgb(23 23 23 / var(--tw-text-opacity, 1));
+}
+.data-\[state\=active\]\:text-neutral-950[data-state="active"] {
+  --tw-text-opacity: 1;
+  color: rgb(10 10 10 / var(--tw-text-opacity, 1));
+}
+.data-\[state\=open\]\:text-neutral-500[data-state="open"] {
+  --tw-text-opacity: 1;
+  color: rgb(115 115 115 / var(--tw-text-opacity, 1));
+}
+.data-\[disabled\=true\]\:opacity-50[data-disabled="true"] {
+  opacity: 0.5;
+}
+.data-\[disabled\]\:opacity-50[data-disabled] {
+  opacity: 0.5;
+}
+.data-\[state\=active\]\:shadow[data-state="active"] {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.data-\[state\=open\]\:animate-in[data-state="open"] {
+  animation-name: enter;
+  animation-duration: 150ms;
+  --tw-enter-opacity: initial;
+  --tw-enter-scale: initial;
+  --tw-enter-rotate: initial;
+  --tw-enter-translate-x: initial;
+  --tw-enter-translate-y: initial;
+}
+.data-\[state\=closed\]\:animate-out[data-state="closed"] {
+  animation-name: exit;
+  animation-duration: 150ms;
+  --tw-exit-opacity: initial;
+  --tw-exit-scale: initial;
+  --tw-exit-rotate: initial;
+  --tw-exit-translate-x: initial;
+  --tw-exit-translate-y: initial;
+}
+.data-\[state\=closed\]\:fade-out-0[data-state="closed"] {
+  --tw-exit-opacity: 0;
+}
+.data-\[state\=open\]\:fade-in-0[data-state="open"] {
+  --tw-enter-opacity: 0;
+}
+.data-\[state\=closed\]\:zoom-out-95[data-state="closed"] {
+  --tw-exit-scale: .95;
+}
+.data-\[state\=open\]\:zoom-in-95[data-state="open"] {
+  --tw-enter-scale: .95;
+}
+.data-\[side\=bottom\]\:slide-in-from-top-2[data-side="bottom"] {
+  --tw-enter-translate-y: -0.5rem;
+}
+.data-\[side\=left\]\:slide-in-from-right-2[data-side="left"] {
+  --tw-enter-translate-x: 0.5rem;
+}
+.data-\[side\=right\]\:slide-in-from-left-2[data-side="right"] {
+  --tw-enter-translate-x: -0.5rem;
+}
+.data-\[side\=top\]\:slide-in-from-bottom-2[data-side="top"] {
+  --tw-enter-translate-y: 0.5rem;
+}
+.data-\[state\=closed\]\:slide-out-to-left-1\/2[data-state="closed"] {
+  --tw-exit-translate-x: -50%;
+}
+.data-\[state\=closed\]\:slide-out-to-top-\[48\%\][data-state="closed"] {
+  --tw-exit-translate-y: -48%;
+}
+.data-\[state\=open\]\:slide-in-from-left-1\/2[data-state="open"] {
+  --tw-enter-translate-x: -50%;
+}
+.data-\[state\=open\]\:slide-in-from-top-\[48\%\][data-state="open"] {
+  --tw-enter-translate-y: -48%;
+}
+.hover\:scale-105:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.hover\:bg-blue-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity, 1));
+}
+.hover\:bg-blue-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity, 1));
+}
+.hover\:bg-green-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity, 1));
+}
+.hover\:bg-neutral-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity, 1));
+}
+.hover\:bg-neutral-100\/80:hover {
+  background-color: rgb(245 245 245 / 0.8);
+}
+.hover\:bg-neutral-900\/80:hover {
+  background-color: rgb(23 23 23 / 0.8);
+}
+.hover\:bg-neutral-900\/90:hover {
+  background-color: rgb(23 23 23 / 0.9);
+}
+.hover\:bg-red-500\/80:hover {
+  background-color: rgb(239 68 68 / 0.8);
+}
+.hover\:bg-red-500\/90:hover {
+  background-color: rgb(239 68 68 / 0.9);
+}
+.hover\:bg-sky-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 132 199 / var(--tw-bg-opacity, 1));
+}
+.hover\:bg-slate-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity, 1));
+}
+.hover\:bg-gray-50:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
+}
+.hover\:text-foreground:hover {
+  color: hsl(var(--foreground));
+}
+.hover\:text-neutral-900:hover {
+  --tw-text-opacity: 1;
+  color: rgb(23 23 23 / var(--tw-text-opacity, 1));
+}
+.hover\:text-neutral-950:hover {
+  --tw-text-opacity: 1;
+  color: rgb(10 10 10 / var(--tw-text-opacity, 1));
+}
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+.hover\:opacity-100:hover {
+  opacity: 1;
+}
+.hover\:shadow-2xl:hover {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.hover\:shadow-xl:hover {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.focus\:bg-neutral-100:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity, 1));
+}
+.focus\:text-neutral-900:focus {
+  --tw-text-opacity: 1;
+  color: rgb(23 23 23 / var(--tw-text-opacity, 1));
+}
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+.focus\:ring-1:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+.focus\:ring-2:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+.focus\:ring-neutral-950:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(10 10 10 / var(--tw-ring-opacity, 1));
+}
+.focus\:ring-ring:focus {
+  --tw-ring-color: hsl(var(--ring));
+}
+.focus\:ring-offset-2:focus {
+  --tw-ring-offset-width: 2px;
+}
+.focus-visible\:outline-none:focus-visible {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+.focus-visible\:ring-1:focus-visible {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+.focus-visible\:ring-2:focus-visible {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+.focus-visible\:ring-neutral-950:focus-visible {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(10 10 10 / var(--tw-ring-opacity, 1));
+}
+.focus-visible\:ring-offset-2:focus-visible {
+  --tw-ring-offset-width: 2px;
+}
+.disabled\:pointer-events-none:disabled {
+  pointer-events: none;
+}
+.disabled\:cursor-not-allowed:disabled {
+  cursor: not-allowed;
+}
+.disabled\:opacity-50:disabled {
+  opacity: 0.5;
+}
+.dark\:-rotate-90:is(.dark *) {
+  --tw-rotate: -90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.dark\:rotate-0:is(.dark *) {
+  --tw-rotate: 0deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.dark\:scale-0:is(.dark *) {
+  --tw-scale-x: 0;
+  --tw-scale-y: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.dark\:scale-100:is(.dark *) {
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.dark\:border-\[1px\]:is(.dark *) {
+  border-width: 1px;
+}
+.dark\:border-\[4px\]:is(.dark *) {
+  border-width: 4px;
+}
+.dark\:border-solid:is(.dark *) {
+  border-style: solid;
+}
+.dark\:border-gray-700:is(.dark *) {
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity, 1));
+}
+.dark\:border-neutral-800:is(.dark *) {
+  --tw-border-opacity: 1;
+  border-color: rgb(38 38 38 / var(--tw-border-opacity, 1));
+}
+.dark\:border-red-800:is(.dark *) {
+  --tw-border-opacity: 1;
+  border-color: rgb(153 27 27 / var(--tw-border-opacity, 1));
+}
+.dark\:border-y-white:is(.dark *) {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+  border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+}
+.dark\:border-b-neutral-800:is(.dark *) {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(38 38 38 / var(--tw-border-opacity, 1));
+}
+.dark\:border-t-neutral-800:is(.dark *) {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(38 38 38 / var(--tw-border-opacity, 1));
+}
+.dark\:bg-\[\#EEF2FF\]:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 242 255 / var(--tw-bg-opacity, 1));
+}
+.dark\:bg-black:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+.dark\:bg-gray-800:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
+}
+.dark\:bg-gray-900:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
+}
+.dark\:bg-neutral-50:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity, 1));
+}
+.dark\:bg-neutral-50\/10:is(.dark *) {
+  background-color: rgb(250 250 250 / 0.1);
+}
+.dark\:bg-neutral-800:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 38 38 / var(--tw-bg-opacity, 1));
+}
+.dark\:bg-neutral-950:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(10 10 10 / var(--tw-bg-opacity, 1));
+}
+.dark\:bg-red-900:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(127 29 29 / var(--tw-bg-opacity, 1));
+}
+.dark\:bg-slate-900:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1));
+}
+.dark\:bg-neutral-900:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity, 1));
+}
+.dark\:text-\[\#4E53A2\]:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(78 83 162 / var(--tw-text-opacity, 1));
+}
+.dark\:text-gray-100:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity, 1));
+}
+.dark\:text-gray-200:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity, 1));
+}
+.dark\:text-gray-300:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity, 1));
+}
+.dark\:text-gray-400:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+}
+.dark\:text-neutral-400:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(163 163 163 / var(--tw-text-opacity, 1));
+}
+.dark\:text-neutral-50:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(250 250 250 / var(--tw-text-opacity, 1));
+}
+.dark\:text-neutral-900:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(23 23 23 / var(--tw-text-opacity, 1));
+}
+.dark\:text-white:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+.dark\:text-black:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+.dark\:ring-offset-neutral-950:is(.dark *) {
+  --tw-ring-offset-color: #0a0a0a;
+}
+.dark\:scrollbar-track-transparent:is(.dark *) {
+  --scrollbar-track: transparent !important;
+}
+.dark\:scrollbar-thumb-blue-700:is(.dark *) {
+  --scrollbar-thumb: #1d4ed8 !important;
+}
+.dark\:file\:text-neutral-50:is(.dark *)::file-selector-button {
+  --tw-text-opacity: 1;
+  color: rgb(250 250 250 / var(--tw-text-opacity, 1));
+}
+.dark\:placeholder\:text-neutral-400:is(.dark *)::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(163 163 163 / var(--tw-text-opacity, 1));
+}
+.dark\:placeholder\:text-neutral-400:is(.dark *)::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(163 163 163 / var(--tw-text-opacity, 1));
+}
+.dark\:data-\[selected\=true\]\:bg-neutral-800[data-selected="true"]:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 38 38 / var(--tw-bg-opacity, 1));
+}
+.dark\:data-\[state\=active\]\:bg-neutral-950[data-state="active"]:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(10 10 10 / var(--tw-bg-opacity, 1));
+}
+.dark\:data-\[state\=open\]\:bg-neutral-800[data-state="open"]:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 38 38 / var(--tw-bg-opacity, 1));
+}
+.dark\:data-\[selected\=true\]\:text-neutral-50[data-selected="true"]:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(250 250 250 / var(--tw-text-opacity, 1));
+}
+.dark\:data-\[state\=active\]\:text-neutral-50[data-state="active"]:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(250 250 250 / var(--tw-text-opacity, 1));
+}
+.dark\:data-\[state\=open\]\:text-neutral-400[data-state="open"]:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(163 163 163 / var(--tw-text-opacity, 1));
+}
+.dark\:hover\:bg-neutral-50\/80:hover:is(.dark *) {
+  background-color: rgb(250 250 250 / 0.8);
+}
+.dark\:hover\:bg-neutral-50\/90:hover:is(.dark *) {
+  background-color: rgb(250 250 250 / 0.9);
+}
+.dark\:hover\:bg-neutral-800:hover:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 38 38 / var(--tw-bg-opacity, 1));
+}
+.dark\:hover\:bg-neutral-800\/80:hover:is(.dark *) {
+  background-color: rgb(38 38 38 / 0.8);
+}
+.dark\:hover\:bg-red-900\/80:hover:is(.dark *) {
+  background-color: rgb(127 29 29 / 0.8);
+}
+.dark\:hover\:bg-red-900\/90:hover:is(.dark *) {
+  background-color: rgb(127 29 29 / 0.9);
+}
+.dark\:hover\:bg-zinc-900:hover:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 24 27 / var(--tw-bg-opacity, 1));
+}
+.dark\:hover\:text-neutral-50:hover:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(250 250 250 / var(--tw-text-opacity, 1));
+}
+.dark\:focus\:bg-neutral-800:focus:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 38 38 / var(--tw-bg-opacity, 1));
+}
+.dark\:focus\:text-neutral-50:focus:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(250 250 250 / var(--tw-text-opacity, 1));
+}
+.dark\:focus\:ring-neutral-300:focus:is(.dark *) {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(212 212 212 / var(--tw-ring-opacity, 1));
+}
+.dark\:focus-visible\:ring-neutral-300:focus-visible:is(.dark *) {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(212 212 212 / var(--tw-ring-opacity, 1));
+}
+@media (min-width: 640px) {
+
+  .sm\:h-\[300px\] {
+    height: 300px;
+  }
+
+  .sm\:h-\[400px\] {
+    height: 400px;
+  }
+
+  .sm\:h-\[450px\] {
+    height: 450px;
+  }
+
+  .sm\:h-\[350px\] {
+    height: 350px;
+  }
+
+  .sm\:h-\[320px\] {
+    height: 320px;
+  }
+
+  .sm\:min-h-\[320px\] {
+    min-height: 320px;
+  }
+
+  .sm\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .sm\:w-full {
+    width: 100%;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:flex-col {
+    flex-direction: column;
+  }
+
+  .sm\:flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .sm\:items-center {
+    align-items: center;
+  }
+
+  .sm\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .sm\:justify-between {
+    justify-content: space-between;
+  }
+
+  .sm\:gap-2\.5 {
+    gap: 0.625rem;
+  }
+
+  .sm\:gap-5 {
+    gap: 1.25rem;
+  }
+
+  .sm\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .sm\:rounded-lg {
+    border-radius: var(--radius);
+  }
+
+  .sm\:text-left {
+    text-align: left;
+  }
+}
+@media (min-width: 768px) {
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:h-48 {
+    height: 12rem;
+  }
+
+  .md\:h-\[350px\] {
+    height: 350px;
+  }
+
+  .md\:h-\[400px\] {
+    height: 400px;
+  }
+
+  .md\:h-\[300px\] {
+    height: 300px;
+  }
+
+  .md\:min-h-\[300px\] {
+    min-height: 300px;
+  }
+
+  .md\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .md\:w-20 {
+    width: 5rem;
+  }
+
+  .md\:w-48 {
+    width: 12rem;
+  }
+
+  .md\:w-\[500px\] {
+    width: 500px;
+  }
+
+  .md\:w-auto {
+    width: auto;
+  }
+
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:min-w-\[150px\] {
+    min-width: 150px;
+  }
+
+  .md\:min-w-\[300px\] {
+    min-width: 300px;
+  }
+
+  .md\:min-w-\[550px\] {
+    min-width: 550px;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .md\:items-start {
+    align-items: flex-start;
+  }
+
+  .md\:p-11 {
+    padding: 2.75rem;
+  }
+
+  .md\:p-8 {
+    padding: 2rem;
+  }
+
+  .md\:text-left {
+    text-align: left;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+@media (min-width: 1024px) {
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:h-\[400px\] {
+    height: 400px;
+  }
+
+  .lg\:h-\[300px\] {
+    height: 300px;
+  }
+
+  .lg\:h-\[250px\] {
+    height: 250px;
+  }
+
+  .lg\:h-\[350px\] {
+    height: 350px;
+  }
+
+  .lg\:h-\[200px\] {
+    height: 200px;
+  }
+
+  .lg\:h-\[280px\] {
+    height: 280px;
+  }
+
+  .lg\:min-h-\[300px\] {
+    min-height: 300px;
+  }
+
+  .lg\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .lg\:w-20 {
+    width: 5rem;
+  }
+
+  .lg\:w-\[80\%\] {
+    width: 80%;
+  }
+
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:flex-col {
+    flex-direction: column;
+  }
+
+  .lg\:flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .lg\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .lg\:p-10 {
+    padding: 2.5rem;
+  }
+}
+@media (min-width: 1280px) {
+
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:h-\[\] {
+    height: ;
+  }
+
+  .xl\:h-\[250pc\] {
+    height: 250pc;
+  }
+
+  .xl\:h-\[250px\] {
+    height: 250px;
+  }
+
+  .xl\:h-\[350px\] {
+    height: 350px;
+  }
+
+  .xl\:h-\[300px\] {
+    height: 300px;
+  }
+
+  .xl\:h-\[280px\] {
+    height: 280px;
+  }
+
+  .xl\:min-h-\[280px\] {
+    min-height: 280px;
+  }
+
+  .xl\:w-\[820px\] {
+    width: 820px;
+  }
+
+  .xl\:w-3\/5 {
+    width: 60%;
+  }
+
+  .xl\:w-2\/5 {
+    width: 40%;
+  }
+
+  .xl\:flex-row {
+    flex-direction: row;
+  }
+
+  .xl\:gap-10 {
+    gap: 2.5rem;
+  }
+}
+@media (min-width: 1536px) {
+
+  .\32xl\:h-\[250px\] {
+    height: 250px;
+  }
+
+  .\32xl\:h-\[150px\] {
+    height: 150px;
+  }
+
+  .\32xl\:h-\[200px\] {
+    height: 200px;
+  }
+
+  .\32xl\:min-h-\[200px\] {
+    min-height: 200px;
+  }
+}
+.\[\&\>span\]\:line-clamp-1>span {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.\[\&\>svg\]\:size-4>svg {
+  width: 1rem;
+  height: 1rem;
+}
+.\[\&\>svg\]\:h-3\.5>svg {
+  height: 0.875rem;
+}
+.\[\&\>svg\]\:w-3\.5>svg {
+  width: 0.875rem;
+}
+.\[\&\>svg\]\:shrink-0>svg {
+  flex-shrink: 0;
+}
+.\[\&_\[cmdk-group-heading\]\]\:px-2 [cmdk-group-heading] {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.\[\&_\[cmdk-group-heading\]\]\:py-1\.5 [cmdk-group-heading] {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+.\[\&_\[cmdk-group-heading\]\]\:text-xs [cmdk-group-heading] {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.\[\&_\[cmdk-group-heading\]\]\:font-medium [cmdk-group-heading] {
+  font-weight: 500;
+}
+.\[\&_\[cmdk-group-heading\]\]\:text-neutral-500 [cmdk-group-heading] {
+  --tw-text-opacity: 1;
+  color: rgb(115 115 115 / var(--tw-text-opacity, 1));
+}
+.dark\:\[\&_\[cmdk-group-heading\]\]\:text-neutral-400 [cmdk-group-heading]:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(163 163 163 / var(--tw-text-opacity, 1));
+}
+.\[\&_\[cmdk-group\]\:not\(\[hidden\]\)_\~\[cmdk-group\]\]\:pt-0 [cmdk-group]:not([hidden]) ~[cmdk-group] {
+  padding-top: 0px;
+}
+.\[\&_\[cmdk-group\]\]\:px-2 [cmdk-group] {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.\[\&_\[cmdk-input-wrapper\]_svg\]\:h-5 [cmdk-input-wrapper] svg {
+  height: 1.25rem;
+}
+.\[\&_\[cmdk-input-wrapper\]_svg\]\:w-5 [cmdk-input-wrapper] svg {
+  width: 1.25rem;
+}
+.\[\&_\[cmdk-input\]\]\:h-12 [cmdk-input] {
+  height: 3rem;
+}
+.\[\&_\[cmdk-item\]\]\:px-2 [cmdk-item] {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.\[\&_\[cmdk-item\]\]\:py-3 [cmdk-item] {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.\[\&_\[cmdk-item\]_svg\]\:h-5 [cmdk-item] svg {
+  height: 1.25rem;
+}
+.\[\&_\[cmdk-item\]_svg\]\:w-5 [cmdk-item] svg {
+  width: 1.25rem;
+}
+.\[\&_svg\]\:pointer-events-none svg {
+  pointer-events: none;
+}
+.\[\&_svg\]\:size-4 svg {
+  width: 1rem;
+  height: 1rem;
+}
+.\[\&_svg\]\:shrink-0 svg {
+  flex-shrink: 0;
+}
+</style><style type="text/css" data-vite-dev-id="/Users/tatiadaghelashvili/Desktop/stayConnected-React/src/App.css"></style></head>
+  <body>
+    <div id="root"><a class="bg-blue-300 " href="http://localhost:5175/questionPage" data-discover="true">QuestionPage</a><div class=" shadow-[0px_-2px_4px_rgba(0,0,0,0.1)] border-solid border-b border-b-gray-300 dark:border-b-solid dark:border-b-neutral-800"><div class="max-w-[1400px]  mx-auto  px-5 h-20 flex items-center justify-between gap-4"><div class="text-2xl font-bold"><a aria-current="page" class="active" href="http://localhost:5175/" data-discover="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></a></div><div class="flex justify-between gap-5 md:min-w-[550px] font-sans"></div><div class="flex justify-between gap-3"><a class="hidden md:block" href="http://localhost:5175/login" data-discover="true"><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-950 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 dark:focus-visible:ring-neutral-300 text-neutral-50 shadow dark:bg-neutral-50 dark:text-neutral-900 dark:hover:bg-neutral-50/90 h-9 px-4 py-2 bg-blue-500 hover:bg-blue-400 text-base font-sans">Sign In</button></a><button type="button" id="radix-:r2:" aria-haspopup="menu" aria-expanded="false" data-state="closed" class="flex items-center gap-2 px-4 py-2 bg-gray-200 rounded-md cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-languages w-5 h-5 text-gray-700"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg></button><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-950 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 dark:focus-visible:ring-neutral-300 border border-neutral-200 bg-white shadow-sm hover:bg-neutral-100 hover:text-neutral-900 dark:border-neutral-800 dark:bg-neutral-950 dark:hover:bg-neutral-800 dark:hover:text-neutral-50 h-9 w-9" type="button" id="radix-:r6:" aria-haspopup="menu" aria-expanded="false" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg><span class="sr-only">Toggle theme</span></button><button type="button" id="radix-:ra:" aria-haspopup="menu" aria-expanded="false" data-state="closed" class="block md:hidden"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-align-justify"><path d="M3 12h18"></path><path d="M3 18h18"></path><path d="M3 6h18"></path></svg></button></div></div></div><div class="
+        p-10
+        flex items-center justify-between"><div class="max-w-[1700px]  mx-auto"><div class="w-[1500px] flex flex-col-reverse lg:flex-row"><div class="xl:w-full sm:w-full"><div class="max-w-[1200px] mx-auto px-5  mt-8 mb-8 font-sans flex gap-5 "><div tabindex="-1" class="flex h-full flex-col overflow-hidden bg-white text-neutral-950 dark:border-[1px] border-solid border-gray-700 dark:bg-neutral-950 dark:text-neutral-50 rounded-lg border shadow-md md:min-w-[300px] w-3/4 dark:border-solid dark:border-neutral-800" cmdk-root=""><label cmdk-label="" for=":rh:" id=":rg:" style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"></label><div class="flex items-center border-b px-3" cmdk-input-wrapper=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search mr-2 h-4 w-4 shrink-0 opacity-50"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg><input class="flex h-10 w-full rounded-md bg-transparent py-3 text-sm outline-none placeholder:text-neutral-500 disabled:cursor-not-allowed disabled:opacity-50 dark:placeholder:text-neutral-400" placeholder="Type a command or choose a tag..." cmdk-input="" autocomplete="off" autocorrect="off" spellcheck="false" aria-autocomplete="list" role="combobox" aria-expanded="true" aria-controls=":rf:" aria-labelledby=":rg:" id=":rh:" type="text" value=""></div></div><button type="button" role="combobox" aria-controls="radix-:rj:" aria-expanded="false" aria-autocomplete="none" dir="ltr" data-state="closed" data-placeholder="" class="flex items-center justify-between whitespace-nowrap border-neutral-200 bg-transparent px-3 py-2 text-sm ring-offset-white placeholder:text-neutral-500 focus:outline-none focus:ring-1 focus:ring-neutral-950 disabled:cursor-not-allowed disabled:opacity-50 [&amp;&gt;span]:line-clamp-1 dark:border-neutral-800 dark:ring-offset-neutral-950 dark:placeholder:text-neutral-400 dark:focus:ring-neutral-300 md:min-w-[150px] w-1/4 h-10 rounded-lg border shadow-md"><span style="pointer-events: none;">Choose a tag</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 opacity-50" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button></div><div class="max-w-[1400px] w-full mx-auto px-5 h-full mt-8 mb-8 font-sans"><div class="border dark:border-neutral-800 dark:bg-neutral-950 dark:text-neutral-50 rounded-xl flex flex-col justify-center p-0 border-solid border-b border-zinc-200 bg-card text-card-foreground shadow sm:min-h-[320px] md:min-h-[300px] lg:min-h-[300px] xl:min-h-[280px] 2xl:min-h-[200px] w-full mb-5"><div class="flex flex-col space-y-1.5 p-6"><div class="flex justify-between"><div class="font-semibold leading-none tracking-tight">Ra mainteresebs da</div><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 13C0 5.8203 5.8203 0 13 0C20.1797 0 26 5.8203 26 13C26 20.1797 20.1797 26 13 26C5.8203 26 0 20.1797 0 13Z" fill="#ECFDF5"></path><path d="M7.66663 12.6289L10.4289 15.3912C10.8733 15.8356 11.0956 16.0578 11.3717 16.0578C11.6478 16.0578 11.8701 15.8356 12.3145 15.3912L18.334 9.3717" stroke="#059669" stroke-width="1.6" stroke-linecap="round"></path></svg></div><div class="text-sm text-neutral-500 dark:text-neutral-400"><a class="hover:underline" href="http://localhost:5175/author" data-discover="true">Giga Darchia,</a> 2024-12-01T16:09:44.022126Z</div></div><div class="p-6 pt-0"><p class="text-lg"> C diezi kai enaa?</p></div><div class="items-center p-6 pt-0 flex gap-3"><div class="inline-flex items-center border border-neutral-200 px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-950 focus:ring-offset-2 dark:border-neutral-800 dark:focus:ring-neutral-300 bg-[#EEF2FF] text-[#4E53A2] dark:bg-[#EEF2FF] dark:text-[#4E53A2] rounded-xl">C#</div></div></div><div class="border dark:border-neutral-800 dark:bg-neutral-950 dark:text-neutral-50 rounded-xl flex flex-col justify-center p-0 border-solid border-b border-zinc-200 bg-card text-card-foreground shadow sm:min-h-[320px] md:min-h-[300px] lg:min-h-[300px] xl:min-h-[280px] 2xl:min-h-[200px] w-full mb-5"><div class="flex flex-col space-y-1.5 p-6"><div class="flex justify-between"><div class="font-semibold leading-none tracking-tight">თაითლი</div><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 13C0 5.8203 5.8203 0 13 0C20.1797 0 26 5.8203 26 13C26 20.1797 20.1797 26 13 26C5.8203 26 0 20.1797 0 13Z" fill="#ECFDF5"></path><path d="M7.66663 12.6289L10.4289 15.3912C10.8733 15.8356 11.0956 16.0578 11.3717 16.0578C11.6478 16.0578 11.8701 15.8356 12.3145 15.3912L18.334 9.3717" stroke="#059669" stroke-width="1.6" stroke-linecap="round"></path></svg></div><div class="text-sm text-neutral-500 dark:text-neutral-400"><a class="hover:underline" href="http://localhost:5175/author" data-discover="true">Admin Admin,</a> 2024-12-02T18:58:18.845809Z</div></div><div class="p-6 pt-0"><p class="text-lg"> ტექსტი</p></div><div class="items-center p-6 pt-0 flex gap-3"><div class="inline-flex items-center border border-neutral-200 px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-950 focus:ring-offset-2 dark:border-neutral-800 dark:focus:ring-neutral-300 bg-[#EEF2FF] text-[#4E53A2] dark:bg-[#EEF2FF] dark:text-[#4E53A2] rounded-xl">C++</div><div class="inline-flex items-center border border-neutral-200 px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-950 focus:ring-offset-2 dark:border-neutral-800 dark:focus:ring-neutral-300 bg-[#EEF2FF] text-[#4E53A2] dark:bg-[#EEF2FF] dark:text-[#4E53A2] rounded-xl">Python</div></div></div><div class="border dark:border-neutral-800 dark:bg-neutral-950 dark:text-neutral-50 rounded-xl flex flex-col justify-center p-0 border-solid border-b border-zinc-200 bg-card text-card-foreground shadow sm:min-h-[320px] md:min-h-[300px] lg:min-h-[300px] xl:min-h-[280px] 2xl:min-h-[200px] w-full mb-5"><div class="flex flex-col space-y-1.5 p-6"><div class="flex justify-between"><div class="font-semibold leading-none tracking-tight">თაითლი</div><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 13C0 5.8203 5.8203 0 13 0C20.1797 0 26 5.8203 26 13C26 20.1797 20.1797 26 13 26C5.8203 26 0 20.1797 0 13Z" fill="#ECFDF5"></path><path d="M7.66663 12.6289L10.4289 15.3912C10.8733 15.8356 11.0956 16.0578 11.3717 16.0578C11.6478 16.0578 11.8701 15.8356 12.3145 15.3912L18.334 9.3717" stroke="#059669" stroke-width="1.6" stroke-linecap="round"></path></svg></div><div class="text-sm text-neutral-500 dark:text-neutral-400"><a class="hover:underline" href="http://localhost:5175/author" data-discover="true">Admin Admin,</a> 2024-12-02T18:58:57.795608Z</div></div><div class="p-6 pt-0"><p class="text-lg"> ტექსტი</p></div><div class="items-center p-6 pt-0 flex gap-3"><div class="inline-flex items-center border border-neutral-200 px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-950 focus:ring-offset-2 dark:border-neutral-800 dark:focus:ring-neutral-300 bg-[#EEF2FF] text-[#4E53A2] dark:bg-[#EEF2FF] dark:text-[#4E53A2] rounded-xl">C++</div><div class="inline-flex items-center border border-neutral-200 px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-950 focus:ring-offset-2 dark:border-neutral-800 dark:focus:ring-neutral-300 bg-[#EEF2FF] text-[#4E53A2] dark:bg-[#EEF2FF] dark:text-[#4E53A2] rounded-xl">Python</div></div></div><div class="border dark:border-neutral-800 dark:bg-neutral-950 dark:text-neutral-50 rounded-xl flex flex-col justify-center p-0 border-solid border-b border-zinc-200 bg-card text-card-foreground shadow sm:min-h-[320px] md:min-h-[300px] lg:min-h-[300px] xl:min-h-[280px] 2xl:min-h-[200px] w-full mb-5"><div class="flex flex-col space-y-1.5 p-6"><div class="flex justify-between"><div class="font-semibold leading-none tracking-tight">თაითლი</div><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 13C0 5.8203 5.8203 0 13 0C20.1797 0 26 5.8203 26 13C26 20.1797 20.1797 26 13 26C5.8203 26 0 20.1797 0 13Z" fill="#ECFDF5"></path><path d="M7.66663 12.6289L10.4289 15.3912C10.8733 15.8356 11.0956 16.0578 11.3717 16.0578C11.6478 16.0578 11.8701 15.8356 12.3145 15.3912L18.334 9.3717" stroke="#059669" stroke-width="1.6" stroke-linecap="round"></path></svg></div><div class="text-sm text-neutral-500 dark:text-neutral-400"><a class="hover:underline" href="http://localhost:5175/author" data-discover="true">Admin Admin,</a> 2024-12-02T18:59:02.167817Z</div></div><div class="p-6 pt-0"><p class="text-lg"> ტექსტი</p></div><div class="items-center p-6 pt-0 flex gap-3"><div class="inline-flex items-center border border-neutral-200 px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-950 focus:ring-offset-2 dark:border-neutral-800 dark:focus:ring-neutral-300 bg-[#EEF2FF] text-[#4E53A2] dark:bg-[#EEF2FF] dark:text-[#4E53A2] rounded-xl">C++</div><div class="inline-flex items-center border border-neutral-200 px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-950 focus:ring-offset-2 dark:border-neutral-800 dark:focus:ring-neutral-300 bg-[#EEF2FF] text-[#4E53A2] dark:bg-[#EEF2FF] dark:text-[#4E53A2] rounded-xl">Python</div></div></div><div class="border dark:border-neutral-800 dark:bg-neutral-950 dark:text-neutral-50 rounded-xl flex flex-col justify-center p-0 border-solid border-b border-zinc-200 bg-card text-card-foreground shadow sm:min-h-[320px] md:min-h-[300px] lg:min-h-[300px] xl:min-h-[280px] 2xl:min-h-[200px] w-full mb-5"><div class="flex flex-col space-y-1.5 p-6"><div class="flex justify-between"><div class="font-semibold leading-none tracking-tight">თაითლი</div><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 13C0 5.8203 5.8203 0 13 0C20.1797 0 26 5.8203 26 13C26 20.1797 20.1797 26 13 26C5.8203 26 0 20.1797 0 13Z" fill="#ECFDF5"></path><path d="M7.66663 12.6289L10.4289 15.3912C10.8733 15.8356 11.0956 16.0578 11.3717 16.0578C11.6478 16.0578 11.8701 15.8356 12.3145 15.3912L18.334 9.3717" stroke="#059669" stroke-width="1.6" stroke-linecap="round"></path></svg></div><div class="text-sm text-neutral-500 dark:text-neutral-400"><a class="hover:underline" href="http://localhost:5175/author" data-discover="true">Admin Admin,</a> 2024-12-02T18:59:03.625742Z</div></div><div class="p-6 pt-0"><p class="text-lg"> ტექსტი</p></div><div class="items-center p-6 pt-0 flex gap-3"><div class="inline-flex items-center border border-neutral-200 px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-950 focus:ring-offset-2 dark:border-neutral-800 dark:focus:ring-neutral-300 bg-[#EEF2FF] text-[#4E53A2] dark:bg-[#EEF2FF] dark:text-[#4E53A2] rounded-xl">C++</div><div class="inline-flex items-center border border-neutral-200 px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-950 focus:ring-offset-2 dark:border-neutral-800 dark:focus:ring-neutral-300 bg-[#EEF2FF] text-[#4E53A2] dark:bg-[#EEF2FF] dark:text-[#4E53A2] rounded-xl">Python</div></div></div><div class="border dark:border-neutral-800 dark:bg-neutral-950 dark:text-neutral-50 rounded-xl flex flex-col justify-center p-0 border-solid border-b border-zinc-200 bg-card text-card-foreground shadow sm:min-h-[320px] md:min-h-[300px] lg:min-h-[300px] xl:min-h-[280px] 2xl:min-h-[200px] w-full mb-5"><div class="flex flex-col space-y-1.5 p-6"><div class="flex justify-between"><div class="font-semibold leading-none tracking-tight">programing language</div><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 13C0 5.8203 5.8203 0 13 0C20.1797 0 26 5.8203 26 13C26 20.1797 20.1797 26 13 26C5.8203 26 0 20.1797 0 13Z" fill="#ECFDF5"></path><path d="M7.66663 12.6289L10.4289 15.3912C10.8733 15.8356 11.0956 16.0578 11.3717 16.0578C11.6478 16.0578 11.8701 15.8356 12.3145 15.3912L18.334 9.3717" stroke="#059669" stroke-width="1.6" stroke-linecap="round"></path></svg></div><div class="text-sm text-neutral-500 dark:text-neutral-400"><a class="hover:underline" href="http://localhost:5175/author" data-discover="true">misho peikrishvili,</a> 2024-12-03T11:10:40.373822Z</div></div><div class="p-6 pt-0"><p class="text-lg"> which programing language is easy?</p></div><div class="items-center p-6 pt-0 flex gap-3"><div class="inline-flex items-center border border-neutral-200 px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-950 focus:ring-offset-2 dark:border-neutral-800 dark:focus:ring-neutral-300 bg-[#EEF2FF] text-[#4E53A2] dark:bg-[#EEF2FF] dark:text-[#4E53A2] rounded-xl">C++</div></div></div><div class="border dark:border-neutral-800 dark:bg-neutral-950 dark:text-neutral-50 rounded-xl flex flex-col justify-center p-0 border-solid border-b border-zinc-200 bg-card text-card-foreground shadow sm:min-h-[320px] md:min-h-[300px] lg:min-h-[300px] xl:min-h-[280px] 2xl:min-h-[200px] w-full mb-5"><div class="flex flex-col space-y-1.5 p-6"><div class="flex justify-between"><div class="font-semibold leading-none tracking-tight">python</div><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 13C0 5.8203 5.8203 0 13 0C20.1797 0 26 5.8203 26 13C26 20.1797 20.1797 26 13 26C5.8203 26 0 20.1797 0 13Z" fill="#ECFDF5"></path><path d="M7.66663 12.6289L10.4289 15.3912C10.8733 15.8356 11.0956 16.0578 11.3717 16.0578C11.6478 16.0578 11.8701 15.8356 12.3145 15.3912L18.334 9.3717" stroke="#059669" stroke-width="1.6" stroke-linecap="round"></path></svg></div><div class="text-sm text-neutral-500 dark:text-neutral-400"><a class="hover:underline" href="http://localhost:5175/author" data-discover="true">misho peikrishvili,</a> 2024-12-03T11:14:27.360279Z</div></div><div class="p-6 pt-0"><p class="text-lg"> can someone help me?</p></div><div class="items-center p-6 pt-0 flex gap-3"><div class="inline-flex items-center border border-neutral-200 px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-950 focus:ring-offset-2 dark:border-neutral-800 dark:focus:ring-neutral-300 bg-[#EEF2FF] text-[#4E53A2] dark:bg-[#EEF2FF] dark:text-[#4E53A2] rounded-xl">C++</div></div></div><div class="border dark:border-neutral-800 dark:bg-neutral-950 dark:text-neutral-50 rounded-xl flex flex-col justify-center p-0 border-solid border-b border-zinc-200 bg-card text-card-foreground shadow sm:min-h-[320px] md:min-h-[300px] lg:min-h-[300px] xl:min-h-[280px] 2xl:min-h-[200px] w-full mb-5"><div class="flex flex-col space-y-1.5 p-6"><div class="flex justify-between"><div class="font-semibold leading-none tracking-tight">რაგქვია?</div><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 13C0 5.8203 5.8203 0 13 0C20.1797 0 26 5.8203 26 13C26 20.1797 20.1797 26 13 26C5.8203 26 0 20.1797 0 13Z" fill="#ECFDF5"></path><path d="M7.66663 12.6289L10.4289 15.3912C10.8733 15.8356 11.0956 16.0578 11.3717 16.0578C11.6478 16.0578 11.8701 15.8356 12.3145 15.3912L18.334 9.3717" stroke="#059669" stroke-width="1.6" stroke-linecap="round"></path></svg></div><div class="text-sm text-neutral-500 dark:text-neutral-400"><a class="hover:underline" href="http://localhost:5175/author" data-discover="true">gio zauta,</a> 2024-12-03T20:01:39.765968Z</div></div><div class="p-6 pt-0"><p class="text-lg"> მჭირდება სახელი</p></div><div class="items-center p-6 pt-0 flex gap-3"><div class="inline-flex items-center border border-neutral-200 px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-950 focus:ring-offset-2 dark:border-neutral-800 dark:focus:ring-neutral-300 bg-[#EEF2FF] text-[#4E53A2] dark:bg-[#EEF2FF] dark:text-[#4E53A2] rounded-xl">C++</div></div></div><div class="border dark:border-neutral-800 dark:bg-neutral-950 dark:text-neutral-50 rounded-xl flex flex-col justify-center p-0 border-solid border-b border-zinc-200 bg-card text-card-foreground shadow sm:min-h-[320px] md:min-h-[300px] lg:min-h-[300px] xl:min-h-[280px] 2xl:min-h-[200px] w-full mb-5"><div class="flex flex-col space-y-1.5 p-6"><div class="flex justify-between"><div class="font-semibold leading-none tracking-tight">რაგქვია?</div><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 13C0 5.8203 5.8203 0 13 0C20.1797 0 26 5.8203 26 13C26 20.1797 20.1797 26 13 26C5.8203 26 0 20.1797 0 13Z" fill="#ECFDF5"></path><path d="M7.66663 12.6289L10.4289 15.3912C10.8733 15.8356 11.0956 16.0578 11.3717 16.0578C11.6478 16.0578 11.8701 15.8356 12.3145 15.3912L18.334 9.3717" stroke="#059669" stroke-width="1.6" stroke-linecap="round"></path></svg></div><div class="text-sm text-neutral-500 dark:text-neutral-400"><a class="hover:underline" href="http://localhost:5175/author" data-discover="true">gio zauta,</a> 2024-12-03T20:01:42.124365Z</div></div><div class="p-6 pt-0"><p class="text-lg"> მჭირდება სახელი</p></div><div class="items-center p-6 pt-0 flex gap-3"><div class="inline-flex items-center border border-neutral-200 px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-950 focus:ring-offset-2 dark:border-neutral-800 dark:focus:ring-neutral-300 bg-[#EEF2FF] text-[#4E53A2] dark:bg-[#EEF2FF] dark:text-[#4E53A2] rounded-xl">C++</div></div></div><div class="border dark:border-neutral-800 dark:bg-neutral-950 dark:text-neutral-50 rounded-xl flex flex-col justify-center p-0 border-solid border-b border-zinc-200 bg-card text-card-foreground shadow sm:min-h-[320px] md:min-h-[300px] lg:min-h-[300px] xl:min-h-[280px] 2xl:min-h-[200px] w-full mb-5"><div class="flex flex-col space-y-1.5 p-6"><div class="flex justify-between"><div class="font-semibold leading-none tracking-tight">რაგქვია?</div><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 13C0 5.8203 5.8203 0 13 0C20.1797 0 26 5.8203 26 13C26 20.1797 20.1797 26 13 26C5.8203 26 0 20.1797 0 13Z" fill="#ECFDF5"></path><path d="M7.66663 12.6289L10.4289 15.3912C10.8733 15.8356 11.0956 16.0578 11.3717 16.0578C11.6478 16.0578 11.8701 15.8356 12.3145 15.3912L18.334 9.3717" stroke="#059669" stroke-width="1.6" stroke-linecap="round"></path></svg></div><div class="text-sm text-neutral-500 dark:text-neutral-400"><a class="hover:underline" href="http://localhost:5175/author" data-discover="true">gio zauta,</a> 2024-12-03T19:54:08.053419Z</div></div><div class="p-6 pt-0"><p class="text-lg"> მჭირდება სახელი</p></div><div class="items-center p-6 pt-0 flex gap-3"><div class="inline-flex items-center border border-neutral-200 px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-950 focus:ring-offset-2 dark:border-neutral-800 dark:focus:ring-neutral-300 bg-[#EEF2FF] text-[#4E53A2] dark:bg-[#EEF2FF] dark:text-[#4E53A2] rounded-xl">C++</div></div></div></div></div><div class="xl:w-full sm:w-full"><div class="max-w-md  mx-auto p-5 flex-col  bg-gray-100 rounded-lg border shadow-lg dark:bg-black dark:border-solid dark:border-neutral-800"><h1 class="mb-3 text-xl font-sans font-bold text-center">Leaderboard</h1><div class="flex justify-between mb-6 gap-4"><div class="flex flex-col items-center p-4 rounded-lg shadow bg-yellow-300 w-1/3"><span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full mb-3"><img class="aspect-square w-full h-full" alt="@shadcn" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 280 280%22 fill%3D%22none%22 shape-rendering%3D%22auto%22%3E%3Cmetadata xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22 xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22 xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22 xmlns%3Adcterms%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%22%3E%3Crdf%3ARDF%3E%3Crdf%3ADescription%3E%3Cdc%3Atitle%3EAvataaars%3C%2Fdc%3Atitle%3E%3Cdc%3Acreator%3EPablo Stanley%3C%2Fdc%3Acreator%3E%3Cdc%3Asource xsi%3Atype%3D%22dcterms%3AURI%22%3Ehttps%3A%2F%2Favataaars.com%2F%3C%2Fdc%3Asource%3E%3Cdcterms%3Alicense xsi%3Atype%3D%22dcterms%3AURI%22%3Ehttps%3A%2F%2Favataaars.com%2F%3C%2Fdcterms%3Alicense%3E%3Cdc%3Arights%3ERemix of %E2%80%9EAvataaars%E2%80%9D (https%3A%2F%2Favataaars.com%2F) by %E2%80%9EPablo Stanley%E2%80%9D%2C licensed under %E2%80%9EFree for personal and commercial use%E2%80%9D (https%3A%2F%2Favataaars.com%2F)%3C%2Fdc%3Arights%3E%3C%2Frdf%3ADescription%3E%3C%2Frdf%3ARDF%3E%3C%2Fmetadata%3E%3Cmask id%3D%22viewboxMask%22%3E%3Crect width%3D%22280%22 height%3D%22280%22 rx%3D%220%22 ry%3D%220%22 x%3D%220%22 y%3D%220%22 fill%3D%22%23fff%22 %2F%3E%3C%2Fmask%3E%3Cg mask%3D%22url(%23viewboxMask)%22%3E%3Cg transform%3D%22translate(8)%22%3E%3Cpath d%3D%22M132 36a56 56 0 0 0-56 56v6.17A12 12 0 0 0 66 110v14a12 12 0 0 0 10.3 11.88 56.04 56.04 0 0 0 31.7 44.73v18.4h-4a72 72 0 0 0-72 72v9h200v-9a72 72 0 0 0-72-72h-4v-18.39a56.04 56.04 0 0 0 31.7-44.73A12 12 0 0 0 198 124v-14a12 12 0 0 0-10-11.83V92a56 56 0 0 0-56-56Z%22 fill%3D%22%23614335%22%2F%3E%3Cpath d%3D%22M108 180.61v8a55.79 55.79 0 0 0 24 5.39c8.59 0 16.73-1.93 24-5.39v-8a55.79 55.79 0 0 1-24 5.39 55.79 55.79 0 0 1-24-5.39Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.1%22%2F%3E%3Cg transform%3D%22translate(0 170)%22%3E%3Cpath d%3D%22M196 38.63V110H68V38.63a71.52 71.52 0 0 1 26-8.94v44.3h76V29.69a71.52 71.52 0 0 1 26 8.94Z%22 fill%3D%22%23929598%22%2F%3E%3Cpath d%3D%22M86 83a5 5 0 1 1-10 0 5 5 0 0 1 10 0ZM188 83a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z%22 fill%3D%22%23F4F4F4%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(78 134)%22%3E%3Cpath fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 d%3D%22M40 29a14 14 0 1 1 28 0%22 fill%3D%22%23000%22 fill-opacity%3D%22.7%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(104 122)%22%3E%3Cpath fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 d%3D%22M16 8c0 4.42 5.37 8 12 8s12-3.58 12-8%22 fill%3D%22%23000%22 fill-opacity%3D%22.16%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(76 90)%22%3E%3Cpath d%3D%22M36 22a6 6 0 1 1-12 0 6 6 0 0 1 12 0ZM88 22a6 6 0 1 1-12 0 6 6 0 0 1 12 0Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.6%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(76 82)%22%3E%3Cpath d%3D%22m31.23 20.42-.9.4c-5.25 2.09-13.2 1.21-18.05-1.12-.57-.27-.18-1.15.4-1.1 14.92 1.14 24.96-8.15 28.37-14.45.1-.18.41-.2.49-.03 2.3 5.32-4.45 13.98-10.3 16.3ZM80.77 20.42l.9.4c5.25 2.09 13.2 1.21 18.05-1.12.57-.27.18-1.15-.4-1.1-14.92 1.14-24.96-8.15-28.37-14.45-.1-.18-.41-.2-.49-.03-2.3 5.32 4.45 13.98 10.3 16.3Z%22 fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 fill%3D%22%23000%22 fill-opacity%3D%22.6%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(-1)%22%3E%3Cpath fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 d%3D%22M180.15 39.92c-2.76-2.82-5.96-5.21-9.08-7.61-.69-.53-1.39-1.05-2.06-1.6-.15-.12-1.72-1.24-1.9-1.66-.45-.99-.19-.22-.12-1.4.08-1.5 3.13-5.73.85-6.7-1-.43-2.8.7-3.75 1.08a59.56 59.56 0 0 1-5.73 1.9c.93-1.85 2.7-5.57-.63-4.58-2.6.78-5.03 2.77-7.64 3.7.86-1.4 4.32-5.8 1.2-6.05-.98-.07-3.8 1.75-4.86 2.14a55.81 55.81 0 0 1-9.63 2.51c-11.2 2.02-24.3 1.45-34.65 6.54-8 3.93-15.88 10.03-20.5 17.8-4.44 7.48-6.1 15.67-7.03 24.25-.69 6.3-.74 12.8-.42 19.12.1 2.07.34 11.61 3.34 8.72 1.5-1.44 1.49-7.25 1.87-9.22.75-3.91 1.47-7.85 2.72-11.64 2.2-6.68 4.81-13.8 10.3-18.4 3.53-2.94 6.01-6.93 9.39-9.9 1.51-1.35.36-1.2 2.8-1.03 1.63.12 3.28.16 4.92.2 3.8.1 7.6.08 11.4.1 7.64 0 15.25.12 22.89-.28 3.4-.18 6.8-.28 10.18-.6 1.9-.17 5.25-1.38 6.8-.45 1.43.84 2.91 3.61 3.94 4.75 2.41 2.67 5.3 4.72 8.12 6.92 5.9 4.57 8.87 10.33 10.66 17.48 1.79 7.13 1.29 13.75 3.5 20.76.38 1.24 1.4 3.36 2.67 1.46.24-.36.18-2.3.18-3.42 0-4.52 1.14-7.91 1.13-12.46-.06-13.83-.5-31.87-10.85-42.44Z%22 fill%3D%22%232c1b18%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(49 72)%22%3E%3Cpath fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 d%3D%22M101.43 98.17c-2.52 2.3-5.2 3.32-8.58 2.6-.58-.12-2.95-4.54-8.85-4.54-5.9 0-8.27 4.42-8.85 4.54-3.39.72-6.07-.3-8.58-2.6-4.72-4.31-8.65-10.26-6.3-16.75 1.24-3.38 3.24-7.1 6.88-8.17 3.89-1.15 9.35 0 13.26-.8A8.6 8.6 0 0 0 84 71a8.6 8.6 0 0 0 3.58 1.46c3.92.78 9.38-.36 13.27.79 3.64 1.07 5.64 4.79 6.87 8.17 2.36 6.49-1.57 12.44-6.3 16.75ZM140.08 26c-3.4 8.4-2.1 18.86-2.72 27.68-.52 7.16-2.02 17.9-8.39 22.53-3.25 2.37-9.18 6.35-13.43 5.24-2.93-.76-3.24-9.16-7.09-12.3a22.42 22.42 0 0 0-15.3-4.9c-2.37.11-7.17.09-9.15 1.91-1.98-1.82-6.78-1.8-9.15-1.9a22.42 22.42 0 0 0-15.3 4.89c-3.85 3.14-4.16 11.54-7.1 12.3-4.24 1.1-10.17-2.87-13.42-5.24-6.37-4.62-7.87-15.37-8.39-22.53-.63-8.82.69-19.28-2.72-27.68-1.66 0-.57 16.13-.57 16.13v20.36c.04 15.28 9.59 38.16 30.76 46.9C63.29 111.53 75 115 84 115c8.98.01 20.71-3.13 25.9-5.27 21.16-8.73 30.71-31.95 30.75-47.23V42.13s1.1-16.13-.57-16.13Z%22 fill%3D%22%23a55728%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(62 42)%22%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"></span><div class="text-center flex flex-col justify-between  h-14"><h2 class="text-md font-semibold dark:text-black">Giga Darchia</h2><p class="text-sm dark:text-black">Score: 1</p></div></div><div class="flex flex-col items-center p-4 rounded-lg shadow bg-gray-300 w-1/3"><span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full mb-3"><img class="aspect-square w-full h-full" alt="@shadcn" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 280 280%22 fill%3D%22none%22 shape-rendering%3D%22auto%22%3E%3Cmetadata xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22 xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22 xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22 xmlns%3Adcterms%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%22%3E%3Crdf%3ARDF%3E%3Crdf%3ADescription%3E%3Cdc%3Atitle%3EAvataaars%3C%2Fdc%3Atitle%3E%3Cdc%3Acreator%3EPablo Stanley%3C%2Fdc%3Acreator%3E%3Cdc%3Asource xsi%3Atype%3D%22dcterms%3AURI%22%3Ehttps%3A%2F%2Favataaars.com%2F%3C%2Fdc%3Asource%3E%3Cdcterms%3Alicense xsi%3Atype%3D%22dcterms%3AURI%22%3Ehttps%3A%2F%2Favataaars.com%2F%3C%2Fdcterms%3Alicense%3E%3Cdc%3Arights%3ERemix of %E2%80%9EAvataaars%E2%80%9D (https%3A%2F%2Favataaars.com%2F) by %E2%80%9EPablo Stanley%E2%80%9D%2C licensed under %E2%80%9EFree for personal and commercial use%E2%80%9D (https%3A%2F%2Favataaars.com%2F)%3C%2Fdc%3Arights%3E%3C%2Frdf%3ADescription%3E%3C%2Frdf%3ARDF%3E%3C%2Fmetadata%3E%3Cmask id%3D%22viewboxMask%22%3E%3Crect width%3D%22280%22 height%3D%22280%22 rx%3D%220%22 ry%3D%220%22 x%3D%220%22 y%3D%220%22 fill%3D%22%23fff%22 %2F%3E%3C%2Fmask%3E%3Cg mask%3D%22url(%23viewboxMask)%22%3E%3Cg transform%3D%22translate(8)%22%3E%3Cpath d%3D%22M132 36a56 56 0 0 0-56 56v6.17A12 12 0 0 0 66 110v14a12 12 0 0 0 10.3 11.88 56.04 56.04 0 0 0 31.7 44.73v18.4h-4a72 72 0 0 0-72 72v9h200v-9a72 72 0 0 0-72-72h-4v-18.39a56.04 56.04 0 0 0 31.7-44.73A12 12 0 0 0 198 124v-14a12 12 0 0 0-10-11.83V92a56 56 0 0 0-56-56Z%22 fill%3D%22%23614335%22%2F%3E%3Cpath d%3D%22M108 180.61v8a55.79 55.79 0 0 0 24 5.39c8.59 0 16.73-1.93 24-5.39v-8a55.79 55.79 0 0 1-24 5.39 55.79 55.79 0 0 1-24-5.39Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.1%22%2F%3E%3Cg transform%3D%22translate(0 170)%22%3E%3Cpath d%3D%22M100.37 29.14a27.6 27.6 0 0 1 7.63-7.57v15.3c0 5.83 3.98 10.98 10.08 14.13l-.08.06.9 2.86c3.89 2 8.35 3.13 13.1 3.13s9.21-1.13 13.1-3.13l.9-2.86-.08-.06c6.1-3.15 10.08-8.3 10.08-14.12v-14.6a27.1 27.1 0 0 1 6.6 6.82 72 72 0 0 1 69.4 71.95V110H32v-8.95a72 72 0 0 1 68.37-71.9Z%22 fill%3D%22%23ffffff%22%2F%3E%3Cpath d%3D%22M108 21.57c-6.77 4.6-11 11.17-11 18.46 0 7.4 4.36 14.05 11.3 18.66l6.12-4.81 4.58.33-1-3.15.08-.06c-6.1-3.15-10.08-8.3-10.08-14.12v-15.3ZM156 36.88c0 5.82-3.98 10.97-10.08 14.12l.08.06-1 3.15 4.58-.33 5.65 4.45c6.63-4.6 10.77-11.1 10.77-18.3 0-6.92-3.82-13.2-10-17.75v14.6Z%22 fill%3D%22%23fff%22 fill-opacity%3D%22.75%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(78 134)%22%3E%3Cpath fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 d%3D%22M34 30.4C35.14 19.9 38.24 11 54 11c15.76 0 18.92 8.96 20 19.5.08.84-.83 1.5-1.96 1.5-6.69 0-9.37-1.5-18.05-1.5-8.7 0-13.24 1.5-17.9 1.5-1.15 0-2.2-.55-2.1-1.6Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.7%22%2F%3E%3Cpath d%3D%22M67.86 15.1c-.8.57-1.8.9-2.86.9H44c-1.3 0-2.49-.5-3.38-1.31C43.56 12.38 47.8 11 54 11c6.54 0 10.9 1.54 13.86 4.1Z%22 fill%3D%22%23fff%22%2F%3E%3Cpath d%3D%22M42 25a6 6 0 0 0-6 6v7a6 6 0 0 0 12 0v-2h.08a6 6 0 0 1 11.84 0H60a6 6 0 0 0 12 0v-5a6 6 0 0 0-6-6H42Z%22 fill%3D%22%237BB24B%22%2F%3E%3Cpath d%3D%22M72 31a6 6 0 0 0-6-6H42a6 6 0 0 0-6 6v6a6 6 0 0 0 12 0v-2h.08a6 6 0 0 1 11.84 0H60a6 6 0 0 0 12 0v-4Z%22 fill%3D%22%2388C553%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(104 122)%22%3E%3Cpath fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 d%3D%22M16 8c0 4.42 5.37 8 12 8s12-3.58 12-8%22 fill%3D%22%23000%22 fill-opacity%3D%22.16%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(76 90)%22%3E%3Cpath d%3D%22M16.16 27.55c1.85 3.8 6 6.45 10.84 6.45 4.81 0 8.96-2.63 10.82-6.4.55-1.13-.24-2.05-1.03-1.37a15.05 15.05 0 0 1-9.8 3.43c-3.73 0-7.12-1.24-9.55-3.23-.9-.73-1.82.01-1.28 1.12ZM74.16 27.55c1.85 3.8 6 6.45 10.84 6.45 4.81 0 8.96-2.63 10.82-6.4.55-1.13-.24-2.05-1.03-1.37a15.05 15.05 0 0 1-9.8 3.43c-3.74 0-7.13-1.24-9.56-3.23-.9-.73-1.82.01-1.28 1.12Z%22 fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 fill%3D%22%23000%22 fill-opacity%3D%22.6%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(76 82)%22%3E%3Cpath d%3D%22M38.66 11.1c-5 .35-9.92.08-14.92-.13-3.83-.16-7.72-.68-11.37 1.01-.7.32-4.53 2.28-4.44 3.35.07.85 3.93 2.2 4.63 2.44 3.67 1.29 7.18.9 10.95.66 4.64-.27 9.25-.07 13.87-.2 3.12-.1 7.92-.63 9.46-4.4.46-1.14.1-3.42-.36-4.66-.19-.5-.72-.69-1.13-.4a15.04 15.04 0 0 1-6.68 2.32ZM73.34 11.1c5 .35 9.92.08 14.92-.13 3.83-.16 7.72-.68 11.37 1.01.7.32 4.53 2.28 4.44 3.35-.07.85-3.93 2.2-4.63 2.44-3.67 1.29-7.18.9-10.95.66-4.63-.27-9.24-.07-13.86-.2-3.12-.1-7.92-.63-9.46-4.4-.46-1.14-.1-3.42.36-4.66.18-.5.72-.69 1.13-.4a15.04 15.04 0 0 0 6.68 2.32Z%22 fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 fill%3D%22%23000%22 fill-opacity%3D%22.6%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(-1)%22%3E%3Cpath fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 d%3D%22M183.68 38.95c5.4-4.95 6.7-14.99 3.64-21.5-3.77-8-11.42-9-18.75-5.48-6.9 3.31-13.06 4.42-20.62 2.81-7.26-1.54-14.14-4.26-21.65-4.7-12.32-.74-24.3 3.83-32.7 13.05a35.75 35.75 0 0 0-4.11 5.8c-.98 1.63-2.08 3.38-2.5 5.26-.2.9.18 3.1-.27 3.83-.48.8-2.3 1.52-3.07 2.1a25.02 25.02 0 0 0-4.18 4.05c-2.66 3.22-4.13 6.59-5.37 10.57-4.1 13.25-4.45 29 .86 42 .7 1.74 2.9 5.36 4.18 1.64.26-.73-.33-3.19-.33-3.93 0-2.72 1.5-20.73 8.05-30.82 2.13-3.28 11.97-15.58 13.98-15.68 1.07 1.7 11.88 12.51 39.94 11.24 12.66-.58 22.4-6.27 24.74-8.73 1.03 5.53 13 13.81 14.82 17.22 5.26 9.85 6.43 30.3 8.44 30.27 2.01-.04 3.45-5.24 3.87-6.23 3.07-7.38 3.6-16.64 3.26-24.56-.42-10.2-4.63-21.23-12.23-28.22Z%22 fill%3D%22%234a312c%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(49 72)%22%3E%3C%2Fg%3E%3Cg transform%3D%22translate(62 42)%22%3E%3Cg fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22%3E%3Cpath d%3D%22M111.71 53.49c4.67.16 8 .88 10.55 4.52 3.01.15 6.25.37 8.98 1.63 3.39 1.56 3.9 5.1-.36 5.59-1.86.2-3.72-.12-5.55-.45l-.19-.03-.33-.06c1.1 9.46-6.21 20.87-14.23 24.35C99.6 93.8 87.34 88.53 81.53 79c-2.62-4.3-4.14-10.51-4.46-15.86-.42-.2-.83-.44-1.23-.67-.38-.22-.76-.44-1.12-.61-2-.98-5.34-1.1-7.5 0-.35.17-.7.37-1.05.58-.42.25-.86.5-1.3.72C64.53 68.5 63.01 74.7 60.4 79c-5.8 9.53-18.07 14.8-29.05 10.04-8.02-3.48-15.33-14.89-14.23-24.35l-.33.06-.2.03c-1.83.33-3.7.66-5.55.45-4.27-.5-3.74-4.03-.36-5.6 2.72-1.25 5.96-1.47 8.97-1.62 2.55-3.63 5.88-4.36 10.55-4.52l23.29-.46c5.19-.14 9.72 0 11.03 4.6a18.7 18.7 0 0 1 6.35-1.25c1.86 0 4.35.45 6.5 1.28 1.3-4.64 5.83-4.77 11.03-4.63l23.3.46Zm-24.03 6.78c-2.37.03-3.5.42-3.9 2.9-.4 2.5 0 5.31.46 7.78.73 3.77 1.92 7.46 4.71 10.22a16.24 16.24 0 0 0 8.32 4.34c.11.03.54.1.96.16.63.1 1.23.18.71.13 3.73.4 7.72.3 10.82-2.05 3.53-2.7 5.95-6.95 7.01-11.2.63-2.48 1.93-8.42-.46-10.4-2.73-2.28-28.63-1.88-28.63-1.88Zm-33.43 0c2.37.03 3.5.42 3.9 2.9.4 2.5 0 5.32-.46 7.78-.73 3.77-1.92 7.46-4.71 10.22a16.23 16.23 0 0 1-9.28 4.5c-.64.1-1.26.19-.68.13-3.73.4-7.74.32-10.85-2.05-3.53-2.69-5.95-6.95-7.01-11.2-.63-2.48-1.93-8.42.46-10.4 2.73-2.28 28.63-1.87 28.63-1.87Zm-10.93 25.5Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.1%22%2F%3E%3Cpath d%3D%22M55.01 57.28c2.51.02 3.7.45 4.13 3.11.43 2.7 0 5.74-.5 8.4-.75 4.06-2.02 8.04-4.98 11a17.16 17.16 0 0 1-8.8 4.69c-.33.07-3.15.47-1.42.27-4.04.47-8.43.45-11.8-2.17-3.74-2.9-6.3-7.5-7.43-12.07-.66-2.66-2.04-9.06.49-11.2C27.6 56.85 55 57.28 55 57.28Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.7%22%2F%3E%3Cpath d%3D%22M55.01 57.28c2.51.02 3.7.45 4.13 3.11.43 2.7 0 5.74-.5 8.4-.75 4.06-2.02 8.04-4.98 11a17.16 17.16 0 0 1-8.8 4.69c-.33.07-3.15.47-1.42.27-4.04.47-8.43.45-11.8-2.17-3.74-2.9-6.3-7.5-7.43-12.07-.66-2.66-2.04-9.06.49-11.2C27.6 56.85 55 57.28 55 57.28Z%22 fill%3D%22url(%23accessoriesSunglasses-a)%22 style%3D%22mix-blend-mode%3Ascreen%22%2F%3E%3Cpath d%3D%22M86.92 57.27c-2.51.03-3.7.45-4.13 3.12-.43 2.7 0 5.73.5 8.4.75 4.06 2.02 8.03 4.98 11a17.17 17.17 0 0 0 8.8 4.69c.33.07 3.15.47 1.42.26 4.04.47 8.43.45 11.8-2.16 3.74-2.9 6.3-7.5 7.43-12.07.66-2.67 2.04-9.07-.49-11.2-2.9-2.46-30.31-2.03-30.31-2.03Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.7%22%2F%3E%3Cpath d%3D%22M86.92 57.27c-2.51.03-3.7.45-4.13 3.12-.43 2.7 0 5.73.5 8.4.75 4.06 2.02 8.03 4.98 11a17.17 17.17 0 0 0 8.8 4.69c.33.07 3.15.47 1.42.26 4.04.47 8.43.45 11.8-2.16 3.74-2.9 6.3-7.5 7.43-12.07.66-2.67 2.04-9.07-.49-11.2-2.9-2.46-30.31-2.03-30.31-2.03Z%22 fill%3D%22url(%23accessoriesSunglasses-b)%22 style%3D%22mix-blend-mode%3Ascreen%22%2F%3E%3Cpath d%3D%22M111.71 51.49c4.67.16 8 .88 10.55 4.52 3.01.15 6.25.37 8.98 1.63 3.39 1.56 3.9 5.1-.36 5.59-1.86.2-3.72-.12-5.55-.45l-.19-.03-.33-.06c1.1 9.46-6.21 20.87-14.23 24.35C99.6 91.8 87.34 86.53 81.53 77c-2.62-4.3-4.14-10.51-4.46-15.86-.42-.2-.83-.44-1.23-.67-.38-.22-.76-.44-1.12-.61-2-.98-5.34-1.1-7.5 0-.35.17-.7.37-1.05.58-.42.25-.86.5-1.3.72C64.53 66.5 63.01 72.7 60.4 77c-5.8 9.53-18.07 14.8-29.05 10.04-8.02-3.48-15.33-14.89-14.23-24.35-.11 0-.22.03-.33.05l-.2.03c-1.83.33-3.7.66-5.55.45-4.27-.5-3.74-4.03-.36-5.6 2.72-1.25 5.96-1.47 8.97-1.62 2.55-3.63 5.88-4.36 10.55-4.52l23.29-.46c5.19-.14 9.72 0 11.03 4.6a18.7 18.7 0 0 1 6.35-1.25c1.86 0 4.35.45 6.5 1.28 1.3-4.64 5.83-4.77 11.03-4.63l23.3.46Zm-24.03 6.78c-2.37.03-3.5.42-3.9 2.9-.4 2.5 0 5.31.46 7.78.73 3.77 1.92 7.46 4.71 10.22a16.24 16.24 0 0 0 8.32 4.34c.11.03.54.1.96.16.63.1 1.23.18.71.13 3.73.4 7.72.3 10.82-2.05 3.53-2.7 5.95-6.95 7.01-11.2.63-2.48 1.93-8.42-.46-10.4-2.73-2.28-28.63-1.88-28.63-1.88Zm-33.43 0c2.37.03 3.5.42 3.9 2.9.4 2.5 0 5.32-.46 7.78-.73 3.77-1.92 7.46-4.71 10.22a16.23 16.23 0 0 1-9.28 4.5c-.64.1-1.26.19-.68.13-3.73.4-7.74.32-10.85-2.05-3.53-2.69-5.95-6.95-7.01-11.2-.63-2.48-1.93-8.42.46-10.4 2.73-2.28 28.63-1.87 28.63-1.87Zm-10.93 25.5Z%22 fill%3D%22%23262e33%22%2F%3E%3C%2Fg%3E%3Cdefs%3E%3ClinearGradient id%3D%22accessoriesSunglasses-a%22 x1%3D%2228.56%22 y1%3D%2257.25%22 x2%3D%2228.56%22 y2%3D%2276.8%22 gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop stop-color%3D%22%23fff%22 stop-opacity%3D%22.5%22%2F%3E%3Cstop offset%3D%221%22 stop-opacity%3D%22.5%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id%3D%22accessoriesSunglasses-b%22 x1%3D%2282.61%22 y1%3D%2257.25%22 x2%3D%2282.61%22 y2%3D%2284.98%22 gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop stop-color%3D%22%23fff%22 stop-opacity%3D%22.5%22%2F%3E%3Cstop offset%3D%22.71%22 stop-opacity%3D%22.5%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"></span><div class="text-center flex flex-col justify-between  h-14"><h2 class="text-md font-semibold dark:text-black">misho peikrishvili</h2><p class="text-sm dark:text-black">Score: 1</p></div></div><div class="flex flex-col items-center p-4 rounded-lg shadow bg-orange-400 w-1/3"><span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full mb-3"><img class="aspect-square w-full h-full" alt="@shadcn" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 280 280%22 fill%3D%22none%22 shape-rendering%3D%22auto%22%3E%3Cmetadata xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22 xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22 xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22 xmlns%3Adcterms%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%22%3E%3Crdf%3ARDF%3E%3Crdf%3ADescription%3E%3Cdc%3Atitle%3EAvataaars%3C%2Fdc%3Atitle%3E%3Cdc%3Acreator%3EPablo Stanley%3C%2Fdc%3Acreator%3E%3Cdc%3Asource xsi%3Atype%3D%22dcterms%3AURI%22%3Ehttps%3A%2F%2Favataaars.com%2F%3C%2Fdc%3Asource%3E%3Cdcterms%3Alicense xsi%3Atype%3D%22dcterms%3AURI%22%3Ehttps%3A%2F%2Favataaars.com%2F%3C%2Fdcterms%3Alicense%3E%3Cdc%3Arights%3ERemix of %E2%80%9EAvataaars%E2%80%9D (https%3A%2F%2Favataaars.com%2F) by %E2%80%9EPablo Stanley%E2%80%9D%2C licensed under %E2%80%9EFree for personal and commercial use%E2%80%9D (https%3A%2F%2Favataaars.com%2F)%3C%2Fdc%3Arights%3E%3C%2Frdf%3ADescription%3E%3C%2Frdf%3ARDF%3E%3C%2Fmetadata%3E%3Cmask id%3D%22viewboxMask%22%3E%3Crect width%3D%22280%22 height%3D%22280%22 rx%3D%220%22 ry%3D%220%22 x%3D%220%22 y%3D%220%22 fill%3D%22%23fff%22 %2F%3E%3C%2Fmask%3E%3Cg mask%3D%22url(%23viewboxMask)%22%3E%3Cg transform%3D%22translate(8)%22%3E%3Cpath d%3D%22M132 36a56 56 0 0 0-56 56v6.17A12 12 0 0 0 66 110v14a12 12 0 0 0 10.3 11.88 56.04 56.04 0 0 0 31.7 44.73v18.4h-4a72 72 0 0 0-72 72v9h200v-9a72 72 0 0 0-72-72h-4v-18.39a56.04 56.04 0 0 0 31.7-44.73A12 12 0 0 0 198 124v-14a12 12 0 0 0-10-11.83V92a56 56 0 0 0-56-56Z%22 fill%3D%22%23ae5d29%22%2F%3E%3Cpath d%3D%22M108 180.61v8a55.79 55.79 0 0 0 24 5.39c8.59 0 16.73-1.93 24-5.39v-8a55.79 55.79 0 0 1-24 5.39 55.79 55.79 0 0 1-24-5.39Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.1%22%2F%3E%3Cg transform%3D%22translate(0 170)%22%3E%3Cpath d%3D%22M196 38.63V110H68V38.63a71.52 71.52 0 0 1 26-8.94v44.3h76V29.69a71.52 71.52 0 0 1 26 8.94Z%22 fill%3D%22%235199e4%22%2F%3E%3Cpath d%3D%22M86 83a5 5 0 1 1-10 0 5 5 0 0 1 10 0ZM188 83a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z%22 fill%3D%22%23F4F4F4%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(78 134)%22%3E%3Cpath fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 d%3D%22M35.12 15.13a19 19 0 0 0 37.77-.09c.08-.77-.77-2.04-1.85-2.04H37.1C36 13 35 14.18 35.12 15.13Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.7%22%2F%3E%3Cpath d%3D%22M70 13H39a5 5 0 0 0 5 5h21a5 5 0 0 0 5-5Z%22 fill%3D%22%23fff%22%2F%3E%3Cpath d%3D%22M66.7 27.14A10.96 10.96 0 0 0 54 25.2a10.95 10.95 0 0 0-12.7 1.94A18.93 18.93 0 0 0 54 32c4.88 0 9.33-1.84 12.7-4.86Z%22 fill%3D%22%23FF4F6D%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(104 122)%22%3E%3Cpath fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 d%3D%22M16 8c0 4.42 5.37 8 12 8s12-3.58 12-8%22 fill%3D%22%23000%22 fill-opacity%3D%22.16%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(76 90)%22%3E%3Cpath d%3D%22M35.96 10c-2.55 0-5.08 1.98-6.46 3.82-1.39-1.84-3.9-3.82-6.46-3.82-5.49 0-9.04 3.33-9.04 7.64 0 5.73 4.41 9.13 9.04 12.74 1.66 1.23 4.78 4.4 5.17 5.1.38.68 2.1.7 2.58 0 .48-.73 3.51-3.87 5.17-5.1 4.63-3.6 9.04-7 9.04-12.74 0-4.3-3.55-7.64-9.04-7.64ZM88.96 10c-2.55 0-5.08 1.98-6.46 3.82-1.39-1.84-3.9-3.82-6.46-3.82-5.49 0-9.04 3.33-9.04 7.64 0 5.73 4.41 9.13 9.04 12.74 1.65 1.23 4.78 4.4 5.17 5.1.38.68 2.1.7 2.58 0 .48-.73 3.51-3.87 5.17-5.1 4.63-3.6 9.04-7 9.04-12.74 0-4.3-3.55-7.64-9.04-7.64Z%22 fill%3D%22%23FF5353%22 fill-opacity%3D%22.8%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(76 82)%22%3E%3Cpath d%3D%22M15.6 14.16c4.49-6.32 14-9.5 23.75-6.36a2 2 0 1 0 1.23-3.81c-11.41-3.68-22.74.1-28.25 7.85a2 2 0 1 0 3.26 2.32ZM96.38 21.16c-3.92-5.51-14.65-8.6-23.9-6.33a2 2 0 0 1-.95-3.88c10.74-2.64 23.17.94 28.1 7.9a2 2 0 1 1-3.25 2.3Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.6%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(-1)%22%3E%3Cpath d%3D%22M177.75 37.86c9.52 7.1 17.76 18.58 18.16 30.82.17 5.5-.62 11.23-1.73 16.62-.5 2.46-1.6 4.66-2.7 6.85-1.07 2.12-2.13 4.24-2.64 6.58-2.63-8.93-10.09-13.97-17.5-19-3.96-2.66-7.9-5.33-11.1-8.58 1.02 1.93 2.3 3.7 3.6 5.46 1.23 1.7 2.47 3.4 3.45 5.22-9.24-5.66-18.2-13.88-22.03-24.3a29.46 29.46 0 0 1-6.1 14.67c-3.02 3.8-7.59 7.87-12.3 9.34 2.43-5.5 4.5-11.21 6.4-16.92-1.78 2.31-7.21 11.29-9.6 15.23l-.77 1.26a73.9 73.9 0 0 1-10.47 13.35c-.5.53-1.42 1.52-.67.54-1.85 2.35-4.45 4.26-6.9 6.07l-1.4 1.04a51.67 51.67 0 0 1-9.2 5.48c-7.1 3.31-14.38 4.54-22.11 3.2.9.1 2.35-.4 3.53-.82a20 20 0 0 1 1.22-.4c1.8-.5 3.47-1.12 5.11-2.02a53.85 53.85 0 0 0 9.18-6.42c-1.37.58-2.6 1.42-3.84 2.27-1.23.83-2.46 1.67-3.83 2.27-2.28 1-4.54 1.53-7.03 1.77-5.46.53-12-.72-16.72-3.6-5.5-3.32-8.54-9.04-9.99-15.13-1.68-7.06-.63-15.04 3.33-21.07.13 2.14 4.43 3.06 7.92 2.53 3.77-.59 6.95-6.52 10.9-13.93 6.19-11.55 14.28-26.67 29.52-30.64 19.96-5.2 34.21 3.87 35.42 4.66 1.22.78 1.8.63 2.93.32l.68-.17c6.35-1.52 13.26-2.2 19.7-.92 6.35 1.26 12.43 4.54 17.57 8.38ZM71.93 110.75l.2.04a1.6 1.6 0 0 1-.2-.04ZM79 156.2c.8-1.53 1.57-3.06 2.32-4.6A56.2 56.2 0 0 0 109 180.6v9.01a54.4 54.4 0 0 1-7.73 1.97c-9 1.62-34.32-3.53-45.44-11.98-.85-.65-.42-1.92.67-2 11.66-.8 17.63-12.13 22.4-21.2l.1-.2ZM157 183.05v-2.44c6.95-3.3 13.11-8 18.13-13.71.71 2.24 1.75 4.33 3.43 5.79 1.32 1.14 3.48 1.12 5.34 1.1l1.2.01c1.67.05 3.34.06 5.02-.02.83-.03 1.2 1.02.53 1.5a39.2 39.2 0 0 1-3.64 2.07 29.3 29.3 0 0 1-7.98 2.74c-1.92.34-3.82.4-5.66.18a9.84 9.84 0 0 0 1.7 1.94c1.41 1.22 3.72 1.2 5.7 1.19h1.28c1.79.05 3.58.06 5.36-.02.9-.04 1.3 1.09.57 1.6a41.97 41.97 0 0 1-3.88 2.22 31.24 31.24 0 0 1-8.53 2.92c-5.5.97-10.86-.18-15.19-3.7a24.9 24.9 0 0 1-3.38-3.37Z%22 fill%3D%22%23a55728%22%2F%3E%3Cpath d%3D%22M81.32 151.6c-.75 1.54-1.51 3.07-2.31 4.6l-.1.18c-4.77 9.08-10.74 20.42-22.4 21.22-1.09.07-1.52 1.34-.67 1.99 11.12 8.45 36.43 13.6 45.44 11.98a54.4 54.4 0 0 0 7.73-1.96v-8.99a56.2 56.2 0 0 1-27.68-29ZM157 180.61v2.44a24.9 24.9 0 0 0 3.38 3.36c4.33 3.53 9.7 4.68 15.2 3.71a31.24 31.24 0 0 0 8.51-2.92 41.97 41.97 0 0 0 3.89-2.22c.72-.51.32-1.64-.57-1.6-1.78.08-3.57.07-5.35.02h-1.29c-1.98.01-4.29.03-5.7-1.2a9.84 9.84 0 0 1-1.7-1.93c1.84.22 3.74.16 5.66-.18a29.3 29.3 0 0 0 7.98-2.73 39.2 39.2 0 0 0 3.64-2.08c.68-.48.3-1.53-.53-1.5a69.9 69.9 0 0 1-5.02.02h-1.2c-1.86.01-4.02.03-5.34-1.11-1.69-1.46-2.72-3.55-3.43-5.8A56.18 56.18 0 0 1 157 180.62Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.16%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(49 72)%22%3E%3C%2Fg%3E%3Cg transform%3D%22translate(62 42)%22%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"></span><div class="text-center flex flex-col justify-between  h-14"><h2 class="text-md font-semibold dark:text-black">John Doe</h2><p class="text-sm dark:text-black">Score: 0</p></div></div></div><div class="bg-white rounded-lg border shadow p-4 dark:bg-neutral-950 dark:border-solid dark:border-neutral-800"><div class="flex items-center p-2 border-b last:border-none hover:bg-gray-50"><span class="w-6 font-bold text-gray-600 mr-3">4.</span><span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full mr-3"><img class="aspect-square w-full h-full" alt="@shadcn" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 280 280%22 fill%3D%22none%22 shape-rendering%3D%22auto%22%3E%3Cmetadata xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22 xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22 xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22 xmlns%3Adcterms%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%22%3E%3Crdf%3ARDF%3E%3Crdf%3ADescription%3E%3Cdc%3Atitle%3EAvataaars%3C%2Fdc%3Atitle%3E%3Cdc%3Acreator%3EPablo Stanley%3C%2Fdc%3Acreator%3E%3Cdc%3Asource xsi%3Atype%3D%22dcterms%3AURI%22%3Ehttps%3A%2F%2Favataaars.com%2F%3C%2Fdc%3Asource%3E%3Cdcterms%3Alicense xsi%3Atype%3D%22dcterms%3AURI%22%3Ehttps%3A%2F%2Favataaars.com%2F%3C%2Fdcterms%3Alicense%3E%3Cdc%3Arights%3ERemix of %E2%80%9EAvataaars%E2%80%9D (https%3A%2F%2Favataaars.com%2F) by %E2%80%9EPablo Stanley%E2%80%9D%2C licensed under %E2%80%9EFree for personal and commercial use%E2%80%9D (https%3A%2F%2Favataaars.com%2F)%3C%2Fdc%3Arights%3E%3C%2Frdf%3ADescription%3E%3C%2Frdf%3ARDF%3E%3C%2Fmetadata%3E%3Cmask id%3D%22viewboxMask%22%3E%3Crect width%3D%22280%22 height%3D%22280%22 rx%3D%220%22 ry%3D%220%22 x%3D%220%22 y%3D%220%22 fill%3D%22%23fff%22 %2F%3E%3C%2Fmask%3E%3Cg mask%3D%22url(%23viewboxMask)%22%3E%3Cg transform%3D%22translate(8)%22%3E%3Cpath d%3D%22M132 36a56 56 0 0 0-56 56v6.17A12 12 0 0 0 66 110v14a12 12 0 0 0 10.3 11.88 56.04 56.04 0 0 0 31.7 44.73v18.4h-4a72 72 0 0 0-72 72v9h200v-9a72 72 0 0 0-72-72h-4v-18.39a56.04 56.04 0 0 0 31.7-44.73A12 12 0 0 0 198 124v-14a12 12 0 0 0-10-11.83V92a56 56 0 0 0-56-56Z%22 fill%3D%22%23ae5d29%22%2F%3E%3Cpath d%3D%22M108 180.61v8a55.79 55.79 0 0 0 24 5.39c8.59 0 16.73-1.93 24-5.39v-8a55.79 55.79 0 0 1-24 5.39 55.79 55.79 0 0 1-24-5.39Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.1%22%2F%3E%3Cg transform%3D%22translate(0 170)%22%3E%3Cpath d%3D%22M196 38.63V110H68V38.63a71.52 71.52 0 0 1 26-8.94v44.3h76V29.69a71.52 71.52 0 0 1 26 8.94Z%22 fill%3D%22%235199e4%22%2F%3E%3Cpath d%3D%22M86 83a5 5 0 1 1-10 0 5 5 0 0 1 10 0ZM188 83a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z%22 fill%3D%22%23F4F4F4%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(78 134)%22%3E%3Cpath fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 d%3D%22M35.12 15.13a19 19 0 0 0 37.77-.09c.08-.77-.77-2.04-1.85-2.04H37.1C36 13 35 14.18 35.12 15.13Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.7%22%2F%3E%3Cpath d%3D%22M70 13H39a5 5 0 0 0 5 5h21a5 5 0 0 0 5-5Z%22 fill%3D%22%23fff%22%2F%3E%3Cpath d%3D%22M66.7 27.14A10.96 10.96 0 0 0 54 25.2a10.95 10.95 0 0 0-12.7 1.94A18.93 18.93 0 0 0 54 32c4.88 0 9.33-1.84 12.7-4.86Z%22 fill%3D%22%23FF4F6D%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(104 122)%22%3E%3Cpath fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 d%3D%22M16 8c0 4.42 5.37 8 12 8s12-3.58 12-8%22 fill%3D%22%23000%22 fill-opacity%3D%22.16%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(76 90)%22%3E%3Cpath d%3D%22M35.96 10c-2.55 0-5.08 1.98-6.46 3.82-1.39-1.84-3.9-3.82-6.46-3.82-5.49 0-9.04 3.33-9.04 7.64 0 5.73 4.41 9.13 9.04 12.74 1.66 1.23 4.78 4.4 5.17 5.1.38.68 2.1.7 2.58 0 .48-.73 3.51-3.87 5.17-5.1 4.63-3.6 9.04-7 9.04-12.74 0-4.3-3.55-7.64-9.04-7.64ZM88.96 10c-2.55 0-5.08 1.98-6.46 3.82-1.39-1.84-3.9-3.82-6.46-3.82-5.49 0-9.04 3.33-9.04 7.64 0 5.73 4.41 9.13 9.04 12.74 1.65 1.23 4.78 4.4 5.17 5.1.38.68 2.1.7 2.58 0 .48-.73 3.51-3.87 5.17-5.1 4.63-3.6 9.04-7 9.04-12.74 0-4.3-3.55-7.64-9.04-7.64Z%22 fill%3D%22%23FF5353%22 fill-opacity%3D%22.8%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(76 82)%22%3E%3Cpath d%3D%22M15.6 14.16c4.49-6.32 14-9.5 23.75-6.36a2 2 0 1 0 1.23-3.81c-11.41-3.68-22.74.1-28.25 7.85a2 2 0 1 0 3.26 2.32ZM96.38 21.16c-3.92-5.51-14.65-8.6-23.9-6.33a2 2 0 0 1-.95-3.88c10.74-2.64 23.17.94 28.1 7.9a2 2 0 1 1-3.25 2.3Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.6%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(-1)%22%3E%3Cpath d%3D%22M177.75 37.86c9.52 7.1 17.76 18.58 18.16 30.82.17 5.5-.62 11.23-1.73 16.62-.5 2.46-1.6 4.66-2.7 6.85-1.07 2.12-2.13 4.24-2.64 6.58-2.63-8.93-10.09-13.97-17.5-19-3.96-2.66-7.9-5.33-11.1-8.58 1.02 1.93 2.3 3.7 3.6 5.46 1.23 1.7 2.47 3.4 3.45 5.22-9.24-5.66-18.2-13.88-22.03-24.3a29.46 29.46 0 0 1-6.1 14.67c-3.02 3.8-7.59 7.87-12.3 9.34 2.43-5.5 4.5-11.21 6.4-16.92-1.78 2.31-7.21 11.29-9.6 15.23l-.77 1.26a73.9 73.9 0 0 1-10.47 13.35c-.5.53-1.42 1.52-.67.54-1.85 2.35-4.45 4.26-6.9 6.07l-1.4 1.04a51.67 51.67 0 0 1-9.2 5.48c-7.1 3.31-14.38 4.54-22.11 3.2.9.1 2.35-.4 3.53-.82a20 20 0 0 1 1.22-.4c1.8-.5 3.47-1.12 5.11-2.02a53.85 53.85 0 0 0 9.18-6.42c-1.37.58-2.6 1.42-3.84 2.27-1.23.83-2.46 1.67-3.83 2.27-2.28 1-4.54 1.53-7.03 1.77-5.46.53-12-.72-16.72-3.6-5.5-3.32-8.54-9.04-9.99-15.13-1.68-7.06-.63-15.04 3.33-21.07.13 2.14 4.43 3.06 7.92 2.53 3.77-.59 6.95-6.52 10.9-13.93 6.19-11.55 14.28-26.67 29.52-30.64 19.96-5.2 34.21 3.87 35.42 4.66 1.22.78 1.8.63 2.93.32l.68-.17c6.35-1.52 13.26-2.2 19.7-.92 6.35 1.26 12.43 4.54 17.57 8.38ZM71.93 110.75l.2.04a1.6 1.6 0 0 1-.2-.04ZM79 156.2c.8-1.53 1.57-3.06 2.32-4.6A56.2 56.2 0 0 0 109 180.6v9.01a54.4 54.4 0 0 1-7.73 1.97c-9 1.62-34.32-3.53-45.44-11.98-.85-.65-.42-1.92.67-2 11.66-.8 17.63-12.13 22.4-21.2l.1-.2ZM157 183.05v-2.44c6.95-3.3 13.11-8 18.13-13.71.71 2.24 1.75 4.33 3.43 5.79 1.32 1.14 3.48 1.12 5.34 1.1l1.2.01c1.67.05 3.34.06 5.02-.02.83-.03 1.2 1.02.53 1.5a39.2 39.2 0 0 1-3.64 2.07 29.3 29.3 0 0 1-7.98 2.74c-1.92.34-3.82.4-5.66.18a9.84 9.84 0 0 0 1.7 1.94c1.41 1.22 3.72 1.2 5.7 1.19h1.28c1.79.05 3.58.06 5.36-.02.9-.04 1.3 1.09.57 1.6a41.97 41.97 0 0 1-3.88 2.22 31.24 31.24 0 0 1-8.53 2.92c-5.5.97-10.86-.18-15.19-3.7a24.9 24.9 0 0 1-3.38-3.37Z%22 fill%3D%22%23a55728%22%2F%3E%3Cpath d%3D%22M81.32 151.6c-.75 1.54-1.51 3.07-2.31 4.6l-.1.18c-4.77 9.08-10.74 20.42-22.4 21.22-1.09.07-1.52 1.34-.67 1.99 11.12 8.45 36.43 13.6 45.44 11.98a54.4 54.4 0 0 0 7.73-1.96v-8.99a56.2 56.2 0 0 1-27.68-29ZM157 180.61v2.44a24.9 24.9 0 0 0 3.38 3.36c4.33 3.53 9.7 4.68 15.2 3.71a31.24 31.24 0 0 0 8.51-2.92 41.97 41.97 0 0 0 3.89-2.22c.72-.51.32-1.64-.57-1.6-1.78.08-3.57.07-5.35.02h-1.29c-1.98.01-4.29.03-5.7-1.2a9.84 9.84 0 0 1-1.7-1.93c1.84.22 3.74.16 5.66-.18a29.3 29.3 0 0 0 7.98-2.73 39.2 39.2 0 0 0 3.64-2.08c.68-.48.3-1.53-.53-1.5a69.9 69.9 0 0 1-5.02.02h-1.2c-1.86.01-4.02.03-5.34-1.11-1.69-1.46-2.72-3.55-3.43-5.8A56.18 56.18 0 0 1 157 180.62Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.16%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(49 72)%22%3E%3C%2Fg%3E%3Cg transform%3D%22translate(62 42)%22%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"></span><div class="w-full flex justify-between"><h3 class="text-sm font-medium">John Doe</h3><p class="text-xs text-gray-500">Score: 0</p></div></div><div class="flex items-center p-2 border-b last:border-none hover:bg-gray-50"><span class="w-6 font-bold text-gray-600 mr-3">5.</span><span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full mr-3"><img class="aspect-square w-full h-full" alt="@shadcn" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 280 280%22 fill%3D%22none%22 shape-rendering%3D%22auto%22%3E%3Cmetadata xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22 xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22 xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22 xmlns%3Adcterms%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%22%3E%3Crdf%3ARDF%3E%3Crdf%3ADescription%3E%3Cdc%3Atitle%3EAvataaars%3C%2Fdc%3Atitle%3E%3Cdc%3Acreator%3EPablo Stanley%3C%2Fdc%3Acreator%3E%3Cdc%3Asource xsi%3Atype%3D%22dcterms%3AURI%22%3Ehttps%3A%2F%2Favataaars.com%2F%3C%2Fdc%3Asource%3E%3Cdcterms%3Alicense xsi%3Atype%3D%22dcterms%3AURI%22%3Ehttps%3A%2F%2Favataaars.com%2F%3C%2Fdcterms%3Alicense%3E%3Cdc%3Arights%3ERemix of %E2%80%9EAvataaars%E2%80%9D (https%3A%2F%2Favataaars.com%2F) by %E2%80%9EPablo Stanley%E2%80%9D%2C licensed under %E2%80%9EFree for personal and commercial use%E2%80%9D (https%3A%2F%2Favataaars.com%2F)%3C%2Fdc%3Arights%3E%3C%2Frdf%3ADescription%3E%3C%2Frdf%3ARDF%3E%3C%2Fmetadata%3E%3Cmask id%3D%22viewboxMask%22%3E%3Crect width%3D%22280%22 height%3D%22280%22 rx%3D%220%22 ry%3D%220%22 x%3D%220%22 y%3D%220%22 fill%3D%22%23fff%22 %2F%3E%3C%2Fmask%3E%3Cg mask%3D%22url(%23viewboxMask)%22%3E%3Cg transform%3D%22translate(8)%22%3E%3Cpath d%3D%22M132 36a56 56 0 0 0-56 56v6.17A12 12 0 0 0 66 110v14a12 12 0 0 0 10.3 11.88 56.04 56.04 0 0 0 31.7 44.73v18.4h-4a72 72 0 0 0-72 72v9h200v-9a72 72 0 0 0-72-72h-4v-18.39a56.04 56.04 0 0 0 31.7-44.73A12 12 0 0 0 198 124v-14a12 12 0 0 0-10-11.83V92a56 56 0 0 0-56-56Z%22 fill%3D%22%23fd9841%22%2F%3E%3Cpath d%3D%22M108 180.61v8a55.79 55.79 0 0 0 24 5.39c8.59 0 16.73-1.93 24-5.39v-8a55.79 55.79 0 0 1-24 5.39 55.79 55.79 0 0 1-24-5.39Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.1%22%2F%3E%3Cg transform%3D%22translate(0 170)%22%3E%3Cpath d%3D%22M108 14.7c-15.52 3.68-27.1 10.83-30.77 19.44A72.02 72.02 0 0 0 32 101v9h200v-9a72.02 72.02 0 0 0-45.23-66.86C183.1 25.53 171.52 18.38 156 14.7V32a24 24 0 1 1-48 0V14.7Z%22 fill%3D%22%23ffafb9%22%2F%3E%3Cpath d%3D%22M102 63.34a67.1 67.1 0 0 1-7-2.82V110h7V63.34ZM162 63.34a67.04 67.04 0 0 0 7-2.82V98.5a3.5 3.5 0 1 1-7 0V63.34Z%22 fill%3D%22%23F4F4F4%22%2F%3E%3Cpath d%3D%22M187.62 34.49a71.79 71.79 0 0 1 10.83 5.63C197.11 55.62 167.87 68 132 68c30.93 0 56-13.43 56-30 0-1.19-.13-2.36-.38-3.51ZM76.38 34.49a16.48 16.48 0 0 0-.38 3.5c0 16.58 25.07 30 56 30-35.87 0-65.1-12.38-66.45-27.88a71.79 71.79 0 0 1 10.83-5.63Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.16%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(78 134)%22%3E%3Crect x%3D%2222%22 y%3D%227%22 width%3D%2264%22 height%3D%2226%22 rx%3D%2213%22 fill%3D%22%23000%22 fill-opacity%3D%22.6%22%2F%3E%3Crect x%3D%2224%22 y%3D%229%22 width%3D%2260%22 height%3D%2222%22 rx%3D%2211%22 fill%3D%22%23fff%22%2F%3E%3Cpath d%3D%22M24.18 18H32V9.41A11 11 0 0 1 35 9h1v9h9V9h4v9h9V9h4v9h9V9h2c.68 0 1.35.06 2 .18V18h8.82l.05.28v3.44l-.05.28H75v8.82c-.65.12-1.32.18-2 .18h-2v-9h-9v9h-4v-9h-9v9h-4v-9h-9v9h-1a11 11 0 0 1-3-.41V22h-7.82a11.06 11.06 0 0 1 0-4Z%22 fill%3D%22%23E6E6E6%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(104 122)%22%3E%3Cpath fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 d%3D%22M16 8c0 4.42 5.37 8 12 8s12-3.58 12-8%22 fill%3D%22%23000%22 fill-opacity%3D%22.16%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(76 90)%22%3E%3Cpath d%3D%22M25 27s-6 7.27-6 11.27a6 6 0 1 0 12 0c0-4-6-11.27-6-11.27Z%22 fill%3D%22%2392D9FF%22%2F%3E%3Cpath d%3D%22M36 22a6 6 0 1 1-12 0 6 6 0 0 1 12 0ZM88 22a6 6 0 1 1-12 0 6 6 0 0 1 12 0Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.6%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(76 82)%22%3E%3Cpath d%3D%22M15.6 14.16c4.49-6.32 14-9.5 23.75-6.36a2 2 0 1 0 1.23-3.81c-11.41-3.68-22.74.1-28.25 7.85a2 2 0 1 0 3.26 2.32ZM96.38 21.16c-3.92-5.51-14.65-8.6-23.9-6.33a2 2 0 0 1-.95-3.88c10.74-2.64 23.17.94 28.1 7.9a2 2 0 1 1-3.25 2.3Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.6%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(-1)%22%3E%3Cpath d%3D%22M157 180.61V199h4a71.7 71.7 0 0 1 46 16.6V92a74 74 0 0 0-148 0v183.72A28 28 0 0 0 83 248v-45.58a71.95 71.95 0 0 1 22-3.42h4v-18.39a56.24 56.24 0 0 1-26-25.36V93.27a150 150 0 0 0 28.34-12.77c15.4-8.9 28.1-19.56 36.73-30.1 1.76 5.2 4.1 10.4 7.04 15.48 8.78 15.2 21.12 26.35 33.9 32.04v.25c.4.06.8.15 1.18.26.77.32 1.55.62 2.33.9A12 12 0 0 1 199 110v13a12 12 0 0 1-10.22 11.87A56.03 56.03 0 0 1 157 180.6Z%22 fill%3D%22%23b58143%22%2F%3E%3Cpath d%3D%22M157 199v-18.39a56.03 56.03 0 0 0 31.8-45.74A12 12 0 0 0 199 123v-13a12 12 0 0 0-6.5-10.66 44.57 44.57 0 0 0 14.5 2.8v113.47A71.7 71.7 0 0 0 161 199h-4ZM83 202.42v-47.17a56.24 56.24 0 0 0 26 25.36V199h-4c-7.67 0-15.07 1.2-22 3.42ZM189 97.92v.25c.4.06.8.15 1.18.26l-1.18-.51Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.27%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(49 72)%22%3E%3C%2Fg%3E%3Cg transform%3D%22translate(62 42)%22%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"></span><div class="w-full flex justify-between"><h3 class="text-sm font-medium">test string</h3><p class="text-xs text-gray-500">Score: 0</p></div></div><div class="flex items-center p-2 border-b last:border-none hover:bg-gray-50"><span class="w-6 font-bold text-gray-600 mr-3">6.</span><span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full mr-3"><img class="aspect-square w-full h-full" alt="@shadcn" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 280 280%22 fill%3D%22none%22 shape-rendering%3D%22auto%22%3E%3Cmetadata xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22 xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22 xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22 xmlns%3Adcterms%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%22%3E%3Crdf%3ARDF%3E%3Crdf%3ADescription%3E%3Cdc%3Atitle%3EAvataaars%3C%2Fdc%3Atitle%3E%3Cdc%3Acreator%3EPablo Stanley%3C%2Fdc%3Acreator%3E%3Cdc%3Asource xsi%3Atype%3D%22dcterms%3AURI%22%3Ehttps%3A%2F%2Favataaars.com%2F%3C%2Fdc%3Asource%3E%3Cdcterms%3Alicense xsi%3Atype%3D%22dcterms%3AURI%22%3Ehttps%3A%2F%2Favataaars.com%2F%3C%2Fdcterms%3Alicense%3E%3Cdc%3Arights%3ERemix of %E2%80%9EAvataaars%E2%80%9D (https%3A%2F%2Favataaars.com%2F) by %E2%80%9EPablo Stanley%E2%80%9D%2C licensed under %E2%80%9EFree for personal and commercial use%E2%80%9D (https%3A%2F%2Favataaars.com%2F)%3C%2Fdc%3Arights%3E%3C%2Frdf%3ADescription%3E%3C%2Frdf%3ARDF%3E%3C%2Fmetadata%3E%3Cmask id%3D%22viewboxMask%22%3E%3Crect width%3D%22280%22 height%3D%22280%22 rx%3D%220%22 ry%3D%220%22 x%3D%220%22 y%3D%220%22 fill%3D%22%23fff%22 %2F%3E%3C%2Fmask%3E%3Cg mask%3D%22url(%23viewboxMask)%22%3E%3Cg transform%3D%22translate(8)%22%3E%3Cpath d%3D%22M132 36a56 56 0 0 0-56 56v6.17A12 12 0 0 0 66 110v14a12 12 0 0 0 10.3 11.88 56.04 56.04 0 0 0 31.7 44.73v18.4h-4a72 72 0 0 0-72 72v9h200v-9a72 72 0 0 0-72-72h-4v-18.39a56.04 56.04 0 0 0 31.7-44.73A12 12 0 0 0 198 124v-14a12 12 0 0 0-10-11.83V92a56 56 0 0 0-56-56Z%22 fill%3D%22%23fd9841%22%2F%3E%3Cpath d%3D%22M108 180.61v8a55.79 55.79 0 0 0 24 5.39c8.59 0 16.73-1.93 24-5.39v-8a55.79 55.79 0 0 1-24 5.39 55.79 55.79 0 0 1-24-5.39Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.1%22%2F%3E%3Cg transform%3D%22translate(0 170)%22%3E%3Cpath d%3D%22M108 14.7c-15.52 3.68-27.1 10.83-30.77 19.44A72.02 72.02 0 0 0 32 101v9h200v-9a72.02 72.02 0 0 0-45.23-66.86C183.1 25.53 171.52 18.38 156 14.7V32a24 24 0 1 1-48 0V14.7Z%22 fill%3D%22%23ffafb9%22%2F%3E%3Cpath d%3D%22M102 63.34a67.1 67.1 0 0 1-7-2.82V110h7V63.34ZM162 63.34a67.04 67.04 0 0 0 7-2.82V98.5a3.5 3.5 0 1 1-7 0V63.34Z%22 fill%3D%22%23F4F4F4%22%2F%3E%3Cpath d%3D%22M187.62 34.49a71.79 71.79 0 0 1 10.83 5.63C197.11 55.62 167.87 68 132 68c30.93 0 56-13.43 56-30 0-1.19-.13-2.36-.38-3.51ZM76.38 34.49a16.48 16.48 0 0 0-.38 3.5c0 16.58 25.07 30 56 30-35.87 0-65.1-12.38-66.45-27.88a71.79 71.79 0 0 1 10.83-5.63Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.16%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(78 134)%22%3E%3Crect x%3D%2222%22 y%3D%227%22 width%3D%2264%22 height%3D%2226%22 rx%3D%2213%22 fill%3D%22%23000%22 fill-opacity%3D%22.6%22%2F%3E%3Crect x%3D%2224%22 y%3D%229%22 width%3D%2260%22 height%3D%2222%22 rx%3D%2211%22 fill%3D%22%23fff%22%2F%3E%3Cpath d%3D%22M24.18 18H32V9.41A11 11 0 0 1 35 9h1v9h9V9h4v9h9V9h4v9h9V9h2c.68 0 1.35.06 2 .18V18h8.82l.05.28v3.44l-.05.28H75v8.82c-.65.12-1.32.18-2 .18h-2v-9h-9v9h-4v-9h-9v9h-4v-9h-9v9h-1a11 11 0 0 1-3-.41V22h-7.82a11.06 11.06 0 0 1 0-4Z%22 fill%3D%22%23E6E6E6%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(104 122)%22%3E%3Cpath fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 d%3D%22M16 8c0 4.42 5.37 8 12 8s12-3.58 12-8%22 fill%3D%22%23000%22 fill-opacity%3D%22.16%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(76 90)%22%3E%3Cpath d%3D%22M25 27s-6 7.27-6 11.27a6 6 0 1 0 12 0c0-4-6-11.27-6-11.27Z%22 fill%3D%22%2392D9FF%22%2F%3E%3Cpath d%3D%22M36 22a6 6 0 1 1-12 0 6 6 0 0 1 12 0ZM88 22a6 6 0 1 1-12 0 6 6 0 0 1 12 0Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.6%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(76 82)%22%3E%3Cpath d%3D%22M15.6 14.16c4.49-6.32 14-9.5 23.75-6.36a2 2 0 1 0 1.23-3.81c-11.41-3.68-22.74.1-28.25 7.85a2 2 0 1 0 3.26 2.32ZM96.38 21.16c-3.92-5.51-14.65-8.6-23.9-6.33a2 2 0 0 1-.95-3.88c10.74-2.64 23.17.94 28.1 7.9a2 2 0 1 1-3.25 2.3Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.6%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(-1)%22%3E%3Cpath d%3D%22M157 180.61V199h4a71.7 71.7 0 0 1 46 16.6V92a74 74 0 0 0-148 0v183.72A28 28 0 0 0 83 248v-45.58a71.95 71.95 0 0 1 22-3.42h4v-18.39a56.24 56.24 0 0 1-26-25.36V93.27a150 150 0 0 0 28.34-12.77c15.4-8.9 28.1-19.56 36.73-30.1 1.76 5.2 4.1 10.4 7.04 15.48 8.78 15.2 21.12 26.35 33.9 32.04v.25c.4.06.8.15 1.18.26.77.32 1.55.62 2.33.9A12 12 0 0 1 199 110v13a12 12 0 0 1-10.22 11.87A56.03 56.03 0 0 1 157 180.6Z%22 fill%3D%22%23b58143%22%2F%3E%3Cpath d%3D%22M157 199v-18.39a56.03 56.03 0 0 0 31.8-45.74A12 12 0 0 0 199 123v-13a12 12 0 0 0-6.5-10.66 44.57 44.57 0 0 0 14.5 2.8v113.47A71.7 71.7 0 0 0 161 199h-4ZM83 202.42v-47.17a56.24 56.24 0 0 0 26 25.36V199h-4c-7.67 0-15.07 1.2-22 3.42ZM189 97.92v.25c.4.06.8.15 1.18.26l-1.18-.51Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.27%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(49 72)%22%3E%3C%2Fg%3E%3Cg transform%3D%22translate(62 42)%22%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"></span><div class="w-full flex justify-between"><h3 class="text-sm font-medium">test test</h3><p class="text-xs text-gray-500">Score: 0</p></div></div><div class="flex items-center p-2 border-b last:border-none hover:bg-gray-50"><span class="w-6 font-bold text-gray-600 mr-3">7.</span><span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full mr-3"><img class="aspect-square w-full h-full" alt="@shadcn" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 280 280%22 fill%3D%22none%22 shape-rendering%3D%22auto%22%3E%3Cmetadata xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22 xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22 xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22 xmlns%3Adcterms%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%22%3E%3Crdf%3ARDF%3E%3Crdf%3ADescription%3E%3Cdc%3Atitle%3EAvataaars%3C%2Fdc%3Atitle%3E%3Cdc%3Acreator%3EPablo Stanley%3C%2Fdc%3Acreator%3E%3Cdc%3Asource xsi%3Atype%3D%22dcterms%3AURI%22%3Ehttps%3A%2F%2Favataaars.com%2F%3C%2Fdc%3Asource%3E%3Cdcterms%3Alicense xsi%3Atype%3D%22dcterms%3AURI%22%3Ehttps%3A%2F%2Favataaars.com%2F%3C%2Fdcterms%3Alicense%3E%3Cdc%3Arights%3ERemix of %E2%80%9EAvataaars%E2%80%9D (https%3A%2F%2Favataaars.com%2F) by %E2%80%9EPablo Stanley%E2%80%9D%2C licensed under %E2%80%9EFree for personal and commercial use%E2%80%9D (https%3A%2F%2Favataaars.com%2F)%3C%2Fdc%3Arights%3E%3C%2Frdf%3ADescription%3E%3C%2Frdf%3ARDF%3E%3C%2Fmetadata%3E%3Cmask id%3D%22viewboxMask%22%3E%3Crect width%3D%22280%22 height%3D%22280%22 rx%3D%220%22 ry%3D%220%22 x%3D%220%22 y%3D%220%22 fill%3D%22%23fff%22 %2F%3E%3C%2Fmask%3E%3Cg mask%3D%22url(%23viewboxMask)%22%3E%3Cg transform%3D%22translate(8)%22%3E%3Cpath d%3D%22M132 36a56 56 0 0 0-56 56v6.17A12 12 0 0 0 66 110v14a12 12 0 0 0 10.3 11.88 56.04 56.04 0 0 0 31.7 44.73v18.4h-4a72 72 0 0 0-72 72v9h200v-9a72 72 0 0 0-72-72h-4v-18.39a56.04 56.04 0 0 0 31.7-44.73A12 12 0 0 0 198 124v-14a12 12 0 0 0-10-11.83V92a56 56 0 0 0-56-56Z%22 fill%3D%22%23edb98a%22%2F%3E%3Cpath d%3D%22M108 180.61v8a55.79 55.79 0 0 0 24 5.39c8.59 0 16.73-1.93 24-5.39v-8a55.79 55.79 0 0 1-24 5.39 55.79 55.79 0 0 1-24-5.39Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.1%22%2F%3E%3Cg transform%3D%22translate(0 170)%22%3E%3Cpath d%3D%22M132.5 51.83c18.5 0 33.5-9.62 33.5-21.48 0-.36-.01-.7-.04-1.06A72 72 0 0 1 232 101.04V110H32v-8.95a72 72 0 0 1 67.05-71.83c-.03.37-.05.75-.05 1.13 0 11.86 15 21.48 33.5 21.48Z%22 fill%3D%22%23E6E6E6%22%2F%3E%3Cpath d%3D%22M132.5 58.76c21.89 0 39.63-12.05 39.63-26.91 0-.6-.02-1.2-.08-1.8-2-.33-4.03-.59-6.1-.76.04.35.05.7.05 1.06 0 11.86-15 21.48-33.5 21.48S99 42.2 99 30.35c0-.38.02-.76.05-1.13-2.06.14-4.08.36-6.08.67-.07.65-.1 1.3-.1 1.96 0 14.86 17.74 26.91 39.63 26.91Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.16%22%2F%3E%3Cpath d%3D%22M100.78 29.12 101 28c-2.96.05-6 1-6 1l-.42.66A72.01 72.01 0 0 0 32 101.06V110h74s-10.7-51.56-5.24-80.8l.02-.08ZM158 110s11-53 5-82c2.96.05 6 1 6 1l.42.66a72.01 72.01 0 0 1 62.58 71.4V110h-74Z%22 fill%3D%22%23929598%22%2F%3E%3Cpath d%3D%22M101 28c-6 29 5 82 5 82H90L76 74l6-9-6-6 19-30s3.04-.95 6-1ZM163 28c6 29-5 82-5 82h16l14-36-6-9 6-6-19-30s-3.04-.95-6-1Z%22 fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 fill%3D%22%23000%22 fill-opacity%3D%22.15%22%2F%3E%3Cpath d%3D%22m183.42 85.77.87-2.24 6.27-4.7a4 4 0 0 1 4.85.05l6.6 5.12-18.59 1.77Z%22 fill%3D%22%23E6E6E6%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(78 134)%22%3E%3Cpath d%3D%22M40 16c0 5.37 6.16 9 14 9s14-3.63 14-9c0-1.1-.95-2-2-2-1.3 0-1.87.9-2 2-1.24 2.94-4.32 4.72-10 5-5.68-.28-8.76-2.06-10-5-.13-1.1-.7-2-2-2-1.05 0-2 .9-2 2Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.6%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(104 122)%22%3E%3Cpath fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 d%3D%22M16 8c0 4.42 5.37 8 12 8s12-3.58 12-8%22 fill%3D%22%23000%22 fill-opacity%3D%22.16%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(76 90)%22%3E%3Cpath d%3D%22M44 22a14 14 0 1 1-28 0 14 14 0 0 1 28 0ZM96 22a14 14 0 1 1-28 0 14 14 0 0 1 28 0Z%22 fill%3D%22%23fff%22%2F%3E%3Cpath d%3D%22M36 22a6 6 0 1 1-12 0 6 6 0 0 1 12 0ZM88 22a6 6 0 1 1-12 0 6 6 0 0 1 12 0Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.7%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(76 82)%22%3E%3Cpath d%3D%22m31.23 20.42-.9.4c-5.25 2.09-13.2 1.21-18.05-1.12-.57-.27-.18-1.15.4-1.1 14.92 1.14 24.96-8.15 28.37-14.45.1-.18.41-.2.49-.03 2.3 5.32-4.45 13.98-10.3 16.3ZM80.77 20.42l.9.4c5.25 2.09 13.2 1.21 18.05-1.12.57-.27.18-1.15-.4-1.1-14.92 1.14-24.96-8.15-28.37-14.45-.1-.18-.41-.2-.49-.03-2.3 5.32 4.45 13.98 10.3 16.3Z%22 fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 fill%3D%22%23000%22 fill-opacity%3D%22.6%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(-1)%22%3E%3Cg fill%3D%22%23e8e1e1%22%3E%3Cpath d%3D%22M187.7 56.12c.9 3.25 2.17 11.95-.06 14.84-.75.96-5.84-1.74-7.97-2.92l-3.53-1.96c-14.92-8.32-19.74-11-45.9-10.62-28.11.4-47.37 13.58-48.46 14.93-.75.93-1.71 3.44-2.5 10.41-.25 2.2-.32 4.97-.4 7.71-.14 5.94-.3 11.77-2.25 11.76-2.44-.01-2.97-23.78-1.92-33.21.04-.36.1-.78.18-1.23.23-1.4.5-3.13.16-4.11-.16-.44-.54-.7-.94-.99-.62-.43-1.26-.88-1.08-2.03.21-1.31 1.1-1.43 1.97-1.56.57-.08 1.13-.16 1.5-.56 1.13-1.23.46-1.87-.31-2.6-.46-.43-.95-.9-1.12-1.53-.63-2.36 1.03-3.1 2.69-3.83l.38-.17c.69-.3 1.1-.42 1.42-.5.6-.15.85-.21 1.89-1.35-2.14-1.56-2.9-3.69.01-4.83.56-.22 1.52-.2 2.5-.2 1.2.02 2.4.03 2.94-.37.15-.11.24-.53.33-.9.06-.27.11-.5.18-.6 1.35-1.93 1.23-3.4 1.08-5.4l-.07-.92c-.13-2.04-.11-3.9 2.33-4.11 1-.08 1.9.4 2.77.86.54.29 1.08.58 1.64.73.87.23 1.1.43 1.32.43.19 0 .37-.15.96-.55 1.18-.82 1.3-2.05 1.43-3.3.11-1.08.22-2.18 1.04-3 1.58-1.6 2.8-.64 4 .3.64.5 1.28 1 1.96 1.1 2.55.36 3.06-1.06 3.62-2.59.36-1 .74-2.06 1.74-2.68 1.83-1.15 2.64-.05 3.43 1.01.5.68.98 1.33 1.7 1.39 1.01.08 2.52-1.1 3.85-2.14a11.6 11.6 0 0 1 2.1-1.44c2.27-.93 3.91.07 5.58 1.08 1.4.85 2.83 1.72 4.65 1.43l.83-.13c2.24-.37 3.11-.51 5.45.96a4.2 4.2 0 0 0 3.74.69c.6-.12 1.3-.25 2.26-.26 1.1 0 1.98.5 2.83.99.7.4 1.36.79 2.13.87.42.04.84-.16 1.26-.36.42-.2.84-.4 1.3-.38 1.83.11 2.69 1.5 3.55 2.88.67 1.08 1.34 2.15 2.46 2.66 1.62.72 3.44.24 5.17-.21.79-.2 1.55-.4 2.28-.5 3.96-.46 3.27 1.97 2.55 4.56a11.1 11.1 0 0 0-.6 3.26c1.15.27 2.3-.15 3.46-.57 1.1-.4 2.18-.8 3.27-.6 3.4.58 2.25 4.02 1.44 6.45l-.08.21c.64 0 1.54-.2 2.56-.42 2.86-.6 6.61-1.41 7.78 1.13.47 1.05 0 2.31-.44 3.54a7.17 7.17 0 0 0-.61 2.41c.02 1.53.7 2.9 1.4 4.27.45.91.9 1.82 1.17 2.78Z%22%2F%3E%3Cpath d%3D%22m186.36 73.6.47.33c1.76.99 3.15 10.9 3.22 14.69.04 2.34.08 11.25-2.4 10.48-.75-.23-1.9-4.95-2.06-7.72-.16-2.76-1.74-12.16-4.14-16.49-.13-.23-.32-.51-.53-.8-.65-.96-1.44-2.12-.92-2.76.72-.88 1.43-.57 2.26-.2l.44.18c.87.35 2.77 1.68 3.66 2.3Z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3Cg transform%3D%22translate(49 72)%22%3E%3C%2Fg%3E%3Cg transform%3D%22translate(62 42)%22%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"></span><div class="w-full flex justify-between"><h3 class="text-sm font-medium">ran dom</h3><p class="text-xs text-gray-500">Score: 0</p></div></div><div class="flex items-center p-2 border-b last:border-none hover:bg-gray-50"><span class="w-6 font-bold text-gray-600 mr-3">8.</span><span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full mr-3"><img class="aspect-square w-full h-full" alt="@shadcn" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 280 280%22 fill%3D%22none%22 shape-rendering%3D%22auto%22%3E%3Cmetadata xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22 xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22 xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22 xmlns%3Adcterms%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%22%3E%3Crdf%3ARDF%3E%3Crdf%3ADescription%3E%3Cdc%3Atitle%3EAvataaars%3C%2Fdc%3Atitle%3E%3Cdc%3Acreator%3EPablo Stanley%3C%2Fdc%3Acreator%3E%3Cdc%3Asource xsi%3Atype%3D%22dcterms%3AURI%22%3Ehttps%3A%2F%2Favataaars.com%2F%3C%2Fdc%3Asource%3E%3Cdcterms%3Alicense xsi%3Atype%3D%22dcterms%3AURI%22%3Ehttps%3A%2F%2Favataaars.com%2F%3C%2Fdcterms%3Alicense%3E%3Cdc%3Arights%3ERemix of %E2%80%9EAvataaars%E2%80%9D (https%3A%2F%2Favataaars.com%2F) by %E2%80%9EPablo Stanley%E2%80%9D%2C licensed under %E2%80%9EFree for personal and commercial use%E2%80%9D (https%3A%2F%2Favataaars.com%2F)%3C%2Fdc%3Arights%3E%3C%2Frdf%3ADescription%3E%3C%2Frdf%3ARDF%3E%3C%2Fmetadata%3E%3Cmask id%3D%22viewboxMask%22%3E%3Crect width%3D%22280%22 height%3D%22280%22 rx%3D%220%22 ry%3D%220%22 x%3D%220%22 y%3D%220%22 fill%3D%22%23fff%22 %2F%3E%3C%2Fmask%3E%3Cg mask%3D%22url(%23viewboxMask)%22%3E%3Cg transform%3D%22translate(8)%22%3E%3Cpath d%3D%22M132 36a56 56 0 0 0-56 56v6.17A12 12 0 0 0 66 110v14a12 12 0 0 0 10.3 11.88 56.04 56.04 0 0 0 31.7 44.73v18.4h-4a72 72 0 0 0-72 72v9h200v-9a72 72 0 0 0-72-72h-4v-18.39a56.04 56.04 0 0 0 31.7-44.73A12 12 0 0 0 198 124v-14a12 12 0 0 0-10-11.83V92a56 56 0 0 0-56-56Z%22 fill%3D%22%23ae5d29%22%2F%3E%3Cpath d%3D%22M108 180.61v8a55.79 55.79 0 0 0 24 5.39c8.59 0 16.73-1.93 24-5.39v-8a55.79 55.79 0 0 1-24 5.39 55.79 55.79 0 0 1-24-5.39Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.1%22%2F%3E%3Cg transform%3D%22translate(0 170)%22%3E%3Cpath d%3D%22M196 38.63V110H68V38.63a71.52 71.52 0 0 1 26-8.94v44.3h76V29.69a71.52 71.52 0 0 1 26 8.94Z%22 fill%3D%22%235199e4%22%2F%3E%3Cpath d%3D%22M86 83a5 5 0 1 1-10 0 5 5 0 0 1 10 0ZM188 83a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z%22 fill%3D%22%23F4F4F4%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(78 134)%22%3E%3Cpath fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 d%3D%22M35.12 15.13a19 19 0 0 0 37.77-.09c.08-.77-.77-2.04-1.85-2.04H37.1C36 13 35 14.18 35.12 15.13Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.7%22%2F%3E%3Cpath d%3D%22M70 13H39a5 5 0 0 0 5 5h21a5 5 0 0 0 5-5Z%22 fill%3D%22%23fff%22%2F%3E%3Cpath d%3D%22M66.7 27.14A10.96 10.96 0 0 0 54 25.2a10.95 10.95 0 0 0-12.7 1.94A18.93 18.93 0 0 0 54 32c4.88 0 9.33-1.84 12.7-4.86Z%22 fill%3D%22%23FF4F6D%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(104 122)%22%3E%3Cpath fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 d%3D%22M16 8c0 4.42 5.37 8 12 8s12-3.58 12-8%22 fill%3D%22%23000%22 fill-opacity%3D%22.16%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(76 90)%22%3E%3Cpath d%3D%22M35.96 10c-2.55 0-5.08 1.98-6.46 3.82-1.39-1.84-3.9-3.82-6.46-3.82-5.49 0-9.04 3.33-9.04 7.64 0 5.73 4.41 9.13 9.04 12.74 1.66 1.23 4.78 4.4 5.17 5.1.38.68 2.1.7 2.58 0 .48-.73 3.51-3.87 5.17-5.1 4.63-3.6 9.04-7 9.04-12.74 0-4.3-3.55-7.64-9.04-7.64ZM88.96 10c-2.55 0-5.08 1.98-6.46 3.82-1.39-1.84-3.9-3.82-6.46-3.82-5.49 0-9.04 3.33-9.04 7.64 0 5.73 4.41 9.13 9.04 12.74 1.65 1.23 4.78 4.4 5.17 5.1.38.68 2.1.7 2.58 0 .48-.73 3.51-3.87 5.17-5.1 4.63-3.6 9.04-7 9.04-12.74 0-4.3-3.55-7.64-9.04-7.64Z%22 fill%3D%22%23FF5353%22 fill-opacity%3D%22.8%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(76 82)%22%3E%3Cpath d%3D%22M15.6 14.16c4.49-6.32 14-9.5 23.75-6.36a2 2 0 1 0 1.23-3.81c-11.41-3.68-22.74.1-28.25 7.85a2 2 0 1 0 3.26 2.32ZM96.38 21.16c-3.92-5.51-14.65-8.6-23.9-6.33a2 2 0 0 1-.95-3.88c10.74-2.64 23.17.94 28.1 7.9a2 2 0 1 1-3.25 2.3Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.6%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(-1)%22%3E%3Cpath d%3D%22M177.75 37.86c9.52 7.1 17.76 18.58 18.16 30.82.17 5.5-.62 11.23-1.73 16.62-.5 2.46-1.6 4.66-2.7 6.85-1.07 2.12-2.13 4.24-2.64 6.58-2.63-8.93-10.09-13.97-17.5-19-3.96-2.66-7.9-5.33-11.1-8.58 1.02 1.93 2.3 3.7 3.6 5.46 1.23 1.7 2.47 3.4 3.45 5.22-9.24-5.66-18.2-13.88-22.03-24.3a29.46 29.46 0 0 1-6.1 14.67c-3.02 3.8-7.59 7.87-12.3 9.34 2.43-5.5 4.5-11.21 6.4-16.92-1.78 2.31-7.21 11.29-9.6 15.23l-.77 1.26a73.9 73.9 0 0 1-10.47 13.35c-.5.53-1.42 1.52-.67.54-1.85 2.35-4.45 4.26-6.9 6.07l-1.4 1.04a51.67 51.67 0 0 1-9.2 5.48c-7.1 3.31-14.38 4.54-22.11 3.2.9.1 2.35-.4 3.53-.82a20 20 0 0 1 1.22-.4c1.8-.5 3.47-1.12 5.11-2.02a53.85 53.85 0 0 0 9.18-6.42c-1.37.58-2.6 1.42-3.84 2.27-1.23.83-2.46 1.67-3.83 2.27-2.28 1-4.54 1.53-7.03 1.77-5.46.53-12-.72-16.72-3.6-5.5-3.32-8.54-9.04-9.99-15.13-1.68-7.06-.63-15.04 3.33-21.07.13 2.14 4.43 3.06 7.92 2.53 3.77-.59 6.95-6.52 10.9-13.93 6.19-11.55 14.28-26.67 29.52-30.64 19.96-5.2 34.21 3.87 35.42 4.66 1.22.78 1.8.63 2.93.32l.68-.17c6.35-1.52 13.26-2.2 19.7-.92 6.35 1.26 12.43 4.54 17.57 8.38ZM71.93 110.75l.2.04a1.6 1.6 0 0 1-.2-.04ZM79 156.2c.8-1.53 1.57-3.06 2.32-4.6A56.2 56.2 0 0 0 109 180.6v9.01a54.4 54.4 0 0 1-7.73 1.97c-9 1.62-34.32-3.53-45.44-11.98-.85-.65-.42-1.92.67-2 11.66-.8 17.63-12.13 22.4-21.2l.1-.2ZM157 183.05v-2.44c6.95-3.3 13.11-8 18.13-13.71.71 2.24 1.75 4.33 3.43 5.79 1.32 1.14 3.48 1.12 5.34 1.1l1.2.01c1.67.05 3.34.06 5.02-.02.83-.03 1.2 1.02.53 1.5a39.2 39.2 0 0 1-3.64 2.07 29.3 29.3 0 0 1-7.98 2.74c-1.92.34-3.82.4-5.66.18a9.84 9.84 0 0 0 1.7 1.94c1.41 1.22 3.72 1.2 5.7 1.19h1.28c1.79.05 3.58.06 5.36-.02.9-.04 1.3 1.09.57 1.6a41.97 41.97 0 0 1-3.88 2.22 31.24 31.24 0 0 1-8.53 2.92c-5.5.97-10.86-.18-15.19-3.7a24.9 24.9 0 0 1-3.38-3.37Z%22 fill%3D%22%23a55728%22%2F%3E%3Cpath d%3D%22M81.32 151.6c-.75 1.54-1.51 3.07-2.31 4.6l-.1.18c-4.77 9.08-10.74 20.42-22.4 21.22-1.09.07-1.52 1.34-.67 1.99 11.12 8.45 36.43 13.6 45.44 11.98a54.4 54.4 0 0 0 7.73-1.96v-8.99a56.2 56.2 0 0 1-27.68-29ZM157 180.61v2.44a24.9 24.9 0 0 0 3.38 3.36c4.33 3.53 9.7 4.68 15.2 3.71a31.24 31.24 0 0 0 8.51-2.92 41.97 41.97 0 0 0 3.89-2.22c.72-.51.32-1.64-.57-1.6-1.78.08-3.57.07-5.35.02h-1.29c-1.98.01-4.29.03-5.7-1.2a9.84 9.84 0 0 1-1.7-1.93c1.84.22 3.74.16 5.66-.18a29.3 29.3 0 0 0 7.98-2.73 39.2 39.2 0 0 0 3.64-2.08c.68-.48.3-1.53-.53-1.5a69.9 69.9 0 0 1-5.02.02h-1.2c-1.86.01-4.02.03-5.34-1.11-1.69-1.46-2.72-3.55-3.43-5.8A56.18 56.18 0 0 1 157 180.62Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.16%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(49 72)%22%3E%3C%2Fg%3E%3Cg transform%3D%22translate(62 42)%22%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"></span><div class="w-full flex justify-between"><h3 class="text-sm font-medium">John Doe</h3><p class="text-xs text-gray-500">Score: 0</p></div></div><div class="flex items-center p-2 border-b last:border-none hover:bg-gray-50"><span class="w-6 font-bold text-gray-600 mr-3">9.</span><span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full mr-3"><img class="aspect-square w-full h-full" alt="@shadcn" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 280 280%22 fill%3D%22none%22 shape-rendering%3D%22auto%22%3E%3Cmetadata xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22 xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22 xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22 xmlns%3Adcterms%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%22%3E%3Crdf%3ARDF%3E%3Crdf%3ADescription%3E%3Cdc%3Atitle%3EAvataaars%3C%2Fdc%3Atitle%3E%3Cdc%3Acreator%3EPablo Stanley%3C%2Fdc%3Acreator%3E%3Cdc%3Asource xsi%3Atype%3D%22dcterms%3AURI%22%3Ehttps%3A%2F%2Favataaars.com%2F%3C%2Fdc%3Asource%3E%3Cdcterms%3Alicense xsi%3Atype%3D%22dcterms%3AURI%22%3Ehttps%3A%2F%2Favataaars.com%2F%3C%2Fdcterms%3Alicense%3E%3Cdc%3Arights%3ERemix of %E2%80%9EAvataaars%E2%80%9D (https%3A%2F%2Favataaars.com%2F) by %E2%80%9EPablo Stanley%E2%80%9D%2C licensed under %E2%80%9EFree for personal and commercial use%E2%80%9D (https%3A%2F%2Favataaars.com%2F)%3C%2Fdc%3Arights%3E%3C%2Frdf%3ADescription%3E%3C%2Frdf%3ARDF%3E%3C%2Fmetadata%3E%3Cmask id%3D%22viewboxMask%22%3E%3Crect width%3D%22280%22 height%3D%22280%22 rx%3D%220%22 ry%3D%220%22 x%3D%220%22 y%3D%220%22 fill%3D%22%23fff%22 %2F%3E%3C%2Fmask%3E%3Cg mask%3D%22url(%23viewboxMask)%22%3E%3Cg transform%3D%22translate(8)%22%3E%3Cpath d%3D%22M132 36a56 56 0 0 0-56 56v6.17A12 12 0 0 0 66 110v14a12 12 0 0 0 10.3 11.88 56.04 56.04 0 0 0 31.7 44.73v18.4h-4a72 72 0 0 0-72 72v9h200v-9a72 72 0 0 0-72-72h-4v-18.39a56.04 56.04 0 0 0 31.7-44.73A12 12 0 0 0 198 124v-14a12 12 0 0 0-10-11.83V92a56 56 0 0 0-56-56Z%22 fill%3D%22%23f8d25c%22%2F%3E%3Cpath d%3D%22M108 180.61v8a55.79 55.79 0 0 0 24 5.39c8.59 0 16.73-1.93 24-5.39v-8a55.79 55.79 0 0 1-24 5.39 55.79 55.79 0 0 1-24-5.39Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.1%22%2F%3E%3Cg transform%3D%22translate(0 170)%22%3E%3Cpath d%3D%22M132.5 54C151 54 166 44.37 166 32.5c0-1.1-.13-2.18-.38-3.23A72 72 0 0 1 232 101.05V110H32v-8.95A72 72 0 0 1 99.4 29.2a14.1 14.1 0 0 0-.4 3.3C99 44.37 114 54 132.5 54Z%22 fill%3D%22%23e6e6e6%22%2F%3E%3Cg transform%3D%22translate(77 58)%22%3E%3Cg fill%3D%22%23fff%22%3E%3Cpath d%3D%22M63.84 17c-.29.65-.56 1.3-.82 1.95L63 19l2-.16A18.7 18.7 0 0 0 63.84 17ZM53.22 17.3c.2-.06.42-.13.7-.3.15.42.26 3.29-1.35 2.98-.92-.18-.5-1.77-.25-2.1.34-.41.59-.49.9-.58Z%22%2F%3E%3Cpath fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 d%3D%22M74.64 16.95C73.46 11.68 70.6 7.97 66.18 5c-3.35-2.25-6.5-2.23-10.46-1.75-3.25.4-6.35 1.3-9.2 2.94-5.04 2.89-7.92 6.74-8.6 12.54-.28 2.33-.33 5.1.5 7.32.48 1.3 1.34 2.34 2.25 3.36.15.17.5.47.86.79.6.52 1.26 1.1 1.28 1.29.12.86-2.2 3.4-2.89 4.15-.05.06-.1.1-.12.14-.23.25-.73.6-1.3.99-1.02.7-2.25 1.55-2.43 2.2-.83 2.93 5.83 1.89 7.45 1.63 1.55-.24 3.11-.54 4.62-.98.7-.2 1.4-.44 2.07-.72.56-.23 1.17-.7 1.78-1.16.7-.52 1.38-1.03 1.97-1.2a5.9 5.9 0 0 1 2.1.02c.6.07 1.2.14 1.7.09 1.5-.15 3.03-.45 4.5-.87a19 19 0 0 0 7.05-3.84c4.42-3.76 6.6-9.24 5.33-15Zm-5.13 6.99c-.62.16-1.36-1.24-1.08-1.72.77-1.34 2.16 1.42 1.08 1.72Zm-2.22-9.38c-.27 1.1.12 2.95.4 4.05.07.36.42.47.73.43.55-.08.45-.56.36-.97-.03-.16-.06-.3-.06-.4.04-.75.11-2.64-.17-3.32-.51-1.26-.97-1.02-1.27.21Zm-.65 8.33c-.58.34-.86-.29-1.05-.74-.06-.13-.1-.24-.16-.32a1.39 1.39 0 0 1-.29-.72c-.01-.18-.02-.22-.58-.39-1.77-.52-1.8.7-1.84 1.94-.02.72-.04 1.45-.4 1.84-1.78 1.91-.58-3.68-.37-4.68l.03-.1.12-.7c.34-1.96 1.02-5.86 2.67-3.11.49.8 2.7 6.49 1.87 6.98Zm-10.37-.95c.6.6 3.7.22 4.02-.34.68-1.18-1.85-.85-2.78-.73l-.29.03c.04-.75.13-1.5.21-2.27.12-1.05.24-2.1.23-3.15v-.17c.02-.62.06-1.94-.96-1.21-.34.25-.33 1.19-.33 1.82v.46c-.02.23-.08.6-.15 1.02-.24 1.51-.61 3.87.04 4.54Zm-.77-2.78c-1.43 5.73-6.98 2.64-4.5-1.71.46-.8.83-.98 1.41-1.26.22-.1.46-.22.75-.4.05-.03.06-.14.06-.28 0-.27.02-.65.43-.64 1.76.03 2.18 2.93 1.85 4.28Zm-7 .83c-.04.87-.14 3.3.97 3 .76-.21.54-9.98-.33-9.98-.92 0-.75 1.78-.6 3.33.1 1 .19 1.91-.04 2.17-.1.12-.51.1-.84.06a2.1 2.1 0 0 0-.4 0c-1.15.2-1.9.08-2.25-.61-.1-.2-.1-.7-.1-1.29-.01-1.33-.02-2.96-1.15-1.5l.03 2.2c.34.72.21 1.16-.38 1.32-.02.3.16.58.28.77.07.1.12.19.12.24.02.14 0 .38-.01.66-.08 1.26-.2 3.54.92 3.4.71-.08.49-2.28.37-3.42l-.05-.6.91.03c.86.04 1.73.08 2.56-.03V20Z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3Cg transform%3D%22translate(78 134)%22%3E%3Cpath fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 d%3D%22M34 30.4C35.14 19.9 38.24 11 54 11c15.76 0 18.92 8.96 20 19.5.08.84-.83 1.5-1.96 1.5-6.69 0-9.37-1.5-18.05-1.5-8.7 0-13.24 1.5-17.9 1.5-1.15 0-2.2-.55-2.1-1.6Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.7%22%2F%3E%3Cpath d%3D%22M67.86 15.1c-.8.57-1.8.9-2.86.9H44c-1.3 0-2.49-.5-3.38-1.31C43.56 12.38 47.8 11 54 11c6.54 0 10.9 1.54 13.86 4.1Z%22 fill%3D%22%23fff%22%2F%3E%3Cpath d%3D%22M42 25a6 6 0 0 0-6 6v7a6 6 0 0 0 12 0v-2h.08a6 6 0 0 1 11.84 0H60a6 6 0 0 0 12 0v-5a6 6 0 0 0-6-6H42Z%22 fill%3D%22%237BB24B%22%2F%3E%3Cpath d%3D%22M72 31a6 6 0 0 0-6-6H42a6 6 0 0 0-6 6v6a6 6 0 0 0 12 0v-2h.08a6 6 0 0 1 11.84 0H60a6 6 0 0 0 12 0v-4Z%22 fill%3D%22%2388C553%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(104 122)%22%3E%3Cpath fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 d%3D%22M16 8c0 4.42 5.37 8 12 8s12-3.58 12-8%22 fill%3D%22%23000%22 fill-opacity%3D%22.16%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(76 90)%22%3E%3Cpath d%3D%22M16.16 27.55c1.85 3.8 6 6.45 10.84 6.45 4.81 0 8.96-2.63 10.82-6.4.55-1.13-.24-2.05-1.03-1.37a15.05 15.05 0 0 1-9.8 3.43c-3.73 0-7.12-1.24-9.55-3.23-.9-.73-1.82.01-1.28 1.12ZM74.16 27.55c1.85 3.8 6 6.45 10.84 6.45 4.81 0 8.96-2.63 10.82-6.4.55-1.13-.24-2.05-1.03-1.37a15.05 15.05 0 0 1-9.8 3.43c-3.74 0-7.13-1.24-9.56-3.23-.9-.73-1.82.01-1.28 1.12Z%22 fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 fill%3D%22%23000%22 fill-opacity%3D%22.6%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(76 82)%22%3E%3Cpath d%3D%22m22.77 1.58.9-.4C28.93-.91 36.88-.03 41.73 2.3c.57.27.18 1.15-.4 1.1-14.92-1.14-24.96 8.15-28.37 14.45-.1.18-.41.2-.49.03-2.3-5.32 4.45-13.98 10.3-16.3ZM89.23 1.58l-.9-.4C83.07-.91 75.12-.03 70.27 2.3c-.57.27-.18 1.15.4 1.1 14.92-1.14 24.96 8.15 28.37 14.45.1.18.41.2.49.03 2.3-5.32-4.45-13.98-10.3-16.3Z%22 fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 fill%3D%22%23000%22 fill-opacity%3D%22.6%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(-1)%22%3E%3Ccircle cx%3D%22133%22 cy%3D%2220%22 r%3D%2220%22 fill%3D%22%23F4F4F4%22%2F%3E%3Cpath fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 d%3D%22M67 78a66 66 0 1 1 132 0v5H67v-5Z%22 fill%3D%22%23a7ffc4%22%2F%3E%3Cpath fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 d%3D%22M64 69.77a7.05 7.05 0 0 1 3.05-5.96c7.8-5.18 30.42-17.8 66.02-17.8 35.6 0 58.14 12.62 65.9 17.81a7.04 7.04 0 0 1 3.03 5.95v30.2c0 3.3-3.9 5.38-6.78 3.75C184.84 97.83 163.1 88 133.8 88a133.57 133.57 0 0 0-63.17 15.98c-2.85 1.56-6.63-.5-6.63-3.75V69.77Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.1%22%2F%3E%3Cpath fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 d%3D%22M64 67.77a7.05 7.05 0 0 1 3.05-5.96c7.8-5.18 30.42-17.8 66.02-17.8 35.6 0 58.14 12.62 65.9 17.81a7.04 7.04 0 0 1 3.03 5.95v30.2c0 3.3-3.9 5.38-6.78 3.75C184.84 95.83 163.1 86 133.8 86a133.57 133.57 0 0 0-63.17 15.98c-2.85 1.56-6.63-.5-6.63-3.75V67.77Z%22 fill%3D%22%23F4F4F4%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(49 72)%22%3E%3C%2Fg%3E%3Cg transform%3D%22translate(62 42)%22%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"></span><div class="w-full flex justify-between"><h3 class="text-sm font-medium">Boo Fooo</h3><p class="text-xs text-gray-500">Score: 0</p></div></div><div class="flex items-center p-2 border-b last:border-none hover:bg-gray-50"><span class="w-6 font-bold text-gray-600 mr-3">10.</span><span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full mr-3"><img class="aspect-square w-full h-full" alt="@shadcn" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 280 280%22 fill%3D%22none%22 shape-rendering%3D%22auto%22%3E%3Cmetadata xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22 xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22 xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22 xmlns%3Adcterms%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%22%3E%3Crdf%3ARDF%3E%3Crdf%3ADescription%3E%3Cdc%3Atitle%3EAvataaars%3C%2Fdc%3Atitle%3E%3Cdc%3Acreator%3EPablo Stanley%3C%2Fdc%3Acreator%3E%3Cdc%3Asource xsi%3Atype%3D%22dcterms%3AURI%22%3Ehttps%3A%2F%2Favataaars.com%2F%3C%2Fdc%3Asource%3E%3Cdcterms%3Alicense xsi%3Atype%3D%22dcterms%3AURI%22%3Ehttps%3A%2F%2Favataaars.com%2F%3C%2Fdcterms%3Alicense%3E%3Cdc%3Arights%3ERemix of %E2%80%9EAvataaars%E2%80%9D (https%3A%2F%2Favataaars.com%2F) by %E2%80%9EPablo Stanley%E2%80%9D%2C licensed under %E2%80%9EFree for personal and commercial use%E2%80%9D (https%3A%2F%2Favataaars.com%2F)%3C%2Fdc%3Arights%3E%3C%2Frdf%3ADescription%3E%3C%2Frdf%3ARDF%3E%3C%2Fmetadata%3E%3Cmask id%3D%22viewboxMask%22%3E%3Crect width%3D%22280%22 height%3D%22280%22 rx%3D%220%22 ry%3D%220%22 x%3D%220%22 y%3D%220%22 fill%3D%22%23fff%22 %2F%3E%3C%2Fmask%3E%3Cg mask%3D%22url(%23viewboxMask)%22%3E%3Cg transform%3D%22translate(8)%22%3E%3Cpath d%3D%22M132 36a56 56 0 0 0-56 56v6.17A12 12 0 0 0 66 110v14a12 12 0 0 0 10.3 11.88 56.04 56.04 0 0 0 31.7 44.73v18.4h-4a72 72 0 0 0-72 72v9h200v-9a72 72 0 0 0-72-72h-4v-18.39a56.04 56.04 0 0 0 31.7-44.73A12 12 0 0 0 198 124v-14a12 12 0 0 0-10-11.83V92a56 56 0 0 0-56-56Z%22 fill%3D%22%23d08b5b%22%2F%3E%3Cpath d%3D%22M108 180.61v8a55.79 55.79 0 0 0 24 5.39c8.59 0 16.73-1.93 24-5.39v-8a55.79 55.79 0 0 1-24 5.39 55.79 55.79 0 0 1-24-5.39Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.1%22%2F%3E%3Cg transform%3D%22translate(0 170)%22%3E%3Cpath d%3D%22M132.5 65.83c27.34 0 49.5-13.2 49.5-29.48 0-1.37-.16-2.7-.46-4.02A72.03 72.03 0 0 1 232 101.05V110H32v-8.95A72.03 72.03 0 0 1 83.53 32a18 18 0 0 0-.53 4.35c0 16.28 22.16 29.48 49.5 29.48Z%22 fill%3D%22%23a7ffc4%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(78 134)%22%3E%3Cpath d%3D%22M40 16c0 5.37 6.16 9 14 9s14-3.63 14-9c0-1.1-.95-2-2-2-1.3 0-1.87.9-2 2-1.24 2.94-4.32 4.72-10 5-5.68-.28-8.76-2.06-10-5-.13-1.1-.7-2-2-2-1.05 0-2 .9-2 2Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.6%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(104 122)%22%3E%3Cpath fill-rule%3D%22evenodd%22 clip-rule%3D%22evenodd%22 d%3D%22M16 8c0 4.42 5.37 8 12 8s12-3.58 12-8%22 fill%3D%22%23000%22 fill-opacity%3D%22.16%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(76 90)%22%3E%3Cpath d%3D%22M44 22a14 14 0 1 1-28 0 14 14 0 0 1 28 0ZM96 22a14 14 0 1 1-28 0 14 14 0 0 1 28 0Z%22 fill%3D%22%23fff%22%2F%3E%3Cpath d%3D%22M36 22a6 6 0 1 1-12 0 6 6 0 0 1 12 0ZM88 22a6 6 0 1 1-12 0 6 6 0 0 1 12 0Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.7%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(76 82)%22%3E%3Cpath d%3D%22M15.98 17.13C17.48 7.6 30.06 1.1 39.16 5.3a2 2 0 1 0 1.68-3.63c-11.5-5.3-26.9 2.66-28.82 14.84a2 2 0 0 0 3.96.63ZM96.02 17.13C94.52 7.6 81.94 1.1 72.84 5.3a2 2 0 1 1-1.68-3.63c11.5-5.3 26.9 2.66 28.82 14.84a2 2 0 0 1-3.96.63Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.6%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(-1)%22%3E%3Cpath d%3D%22M133 18a74 74 0 0 0-74 74v96c0 8.56 1.45 16.78 4.12 24.42A71.67 71.67 0 0 1 105 199h4v-18.39a56.03 56.03 0 0 1-31.8-45.74A12 12 0 0 1 67 123v-13a12 12 0 0 1 .46-3.3c17.13-6.02 33.75-21.94 43.59-44.04.4-.92.8-1.84 1.18-2.76 4.58 12.23 13.21 21.11 25.89 26.63a87.36 87.36 0 0 1-12.45-20.78c7.98 8.5 18.35 16.74 30.48 23.75 14.33 8.27 28.91 13.56 41.87 15.75.63 1.45.98 3.06.98 4.75v13a12 12 0 0 1-10.2 11.87A56.03 56.03 0 0 1 157 180.6V199h4a71.67 71.67 0 0 1 41.88 13.42A73.9 73.9 0 0 0 207 188V92a74 74 0 0 0-74-74Z%22 fill%3D%22%23b58143%22%2F%3E%3Cpath d%3D%22M111.05 62.66C99.59 88.39 78.95 105.75 59 108.84v4c19.95-3.1 40.59-20.45 52.05-46.18.4-.92.8-1.84 1.18-2.76 4.58 12.23 13.21 21.11 25.89 26.63a78.16 78.16 0 0 1-4.62-6.26c-10.18-5.56-17.27-13.69-21.27-24.37a98.8 98.8 0 0 1-1.18 2.76ZM129.5 73.64a137.34 137.34 0 0 0 26.65 19.86c17.75 10.25 35.9 15.91 50.85 16.78v-4c-14.95-.87-33.1-6.54-50.85-16.78-12.13-7-22.5-15.24-30.48-23.75a98.3 98.3 0 0 0 3.83 7.89Z%22 fill%3D%22%23000%22 fill-opacity%3D%22.16%22%2F%3E%3C%2Fg%3E%3Cg transform%3D%22translate(49 72)%22%3E%3C%2Fg%3E%3Cg transform%3D%22translate(62 42)%22%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"></span><div class="w-full flex justify-between"><h3 class="text-sm font-medium">strinas stringas</h3><p class="text-xs text-gray-500">Score: 0</p></div></div></div></div></div></div></div></div><footer class=" bottom-0 left-0 w-full p-4 text-center bg-white h-20 font-sans text-gray-500 flex items-center justify-center shadow-t dark:bg-black dark:shadow-t-gray-800  border-solid border-t border-t-gray-300 dark:border-t-solid dark:border-t-neutral-800">© 2024 StayConnected. All Rights Reserved</footer></div>
+    <script type="module" src="./Vite + React + TS_files/main.tsx"></script>
+  
+
+</body></html>

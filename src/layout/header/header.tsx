@@ -77,26 +77,34 @@ const Header = () => {
             </NavLink>
           </nav>
         </div>
-        <div className="w-72 flex justify-between">
+        <div className="w-96 flex justify-between">
           {user ? (
-            <DropdownMenu>
-              <DropdownMenuTrigger>
-                <Avatar>
-                  <AvatarImage src={profileData?.avatar_url ?? undefined} />
-                  <AvatarFallback>CN</AvatarFallback>
-                </Avatar>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="font-sans">
-                <DropdownMenuLabel>My Account</DropdownMenuLabel>
-                <DropdownMenuSeparator />
-                <NavLink to="/profile">
-                  <DropdownMenuItem>Profile</DropdownMenuItem>
-                </NavLink>
-                <DropdownMenuItem onClick={() => handleLogout()}>
-                  Sign Out
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <>
+              <NavLink to="create-blog">
+                <Button className="bg-blue-500 hover:bg-blue-400 text-base font-sans">
+                  {t("header-page.CreateBlog")}
+                </Button>
+              </NavLink>
+              <DropdownMenu>
+                <DropdownMenuTrigger>
+                  <Avatar>
+                    <AvatarImage src={profileData?.avatar_url ?? undefined} />
+                    <AvatarFallback>CN</AvatarFallback>
+                  </Avatar>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="font-sans">
+                  <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                  <DropdownMenuSeparator />
+                  <NavLink to="/profile">
+                    <DropdownMenuItem>Profile</DropdownMenuItem>
+                  </NavLink>
+
+                  <DropdownMenuItem onClick={() => handleLogout()}>
+                    Sign Out
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </>
           ) : (
             <NavLink to="sign-in">
               <Button className="bg-blue-500 hover:bg-blue-400 text-base font-sans">

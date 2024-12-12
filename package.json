@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "generate:supabase": "supabase gen types typescript --project-id wjczrflgozihhyzdmzod --schema public > src/supabase/supabase.types.ts"
+    "generate:supabase": "supabase gen types typescript --project-id srqnxhbirgokyvlyinol --schema public > src/supabase/supabase.types.ts"
   },
   "dependencies": {
     "@dicebear/collection": "^9.2.2",
@@ -22,14 +22,16 @@
     "@radix-ui/react-select": "^2.1.2",
     "@radix-ui/react-slot": "^1.1.0",
     "@radix-ui/react-tabs": "^1.1.1",
-    "@supabase/supabase-js": "^2.46.1",
+    "@supabase/supabase-js": "^2.47.5",
     "@tanstack/react-query": "^5.61.0",
     "@tanstack/react-router": "^1.82.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "cmdk": "^1.0.0",
     "i18next": "^23.16.5",
     "jotai": "^2.10.3",
     "lucide-react": "^0.460.0",
+    "qs": "^6.13.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.53.2",
@@ -37,12 +39,15 @@
     "react-router-dom": "^6.28.0",
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7",
+    "underscore": "^1.13.7",
     "zod": "^3.23.8"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
+    "@types/qs": "^6.9.17",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
+    "@types/underscore": "^1.13.0",
     "@vitejs/plugin-react": "^4.3.3",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.13.0",

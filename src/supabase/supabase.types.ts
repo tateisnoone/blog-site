@@ -9,33 +9,71 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
+      blog: {
+        Row: {
+          created_at: string
+          description: string | null
+          description_ge: string | null
+          id: number
+          image_url: string | null
+          title: string | null
+          title_ge: string | null
+          user_id: string | null
+        }
+        Insert: {
+          created_at?: string
+          description?: string | null
+          description_ge?: string | null
+          id?: number
+          image_url?: string | null
+          title?: string | null
+          title_ge?: string | null
+          user_id?: string | null
+        }
+        Update: {
+          created_at?: string
+          description?: string | null
+          description_ge?: string | null
+          id?: number
+          image_url?: string | null
+          title?: string | null
+          title_ge?: string | null
+          user_id?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "blog_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       profiles: {
         Row: {
           avatar_url: string | null
           full_name: string | null
-          full_name_ge: string | null
           id: string
-          number: string | null
           updated_at: string | null
           username: string | null
+          website: string | null
         }
         Insert: {
           avatar_url?: string | null
           full_name?: string | null
-          full_name_ge?: string | null
           id: string
-          number?: string | null
           updated_at?: string | null
           username?: string | null
+          website?: string | null
         }
         Update: {
           avatar_url?: string | null
           full_name?: string | null
-          full_name_ge?: string | null
           id?: string
-          number?: string | null
           updated_at?: string | null
           username?: string | null
+          website?: string | null
         }
         Relationships: []
       }

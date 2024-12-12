@@ -14,6 +14,7 @@ import AuthGuard from "./components/route-guards/auth";
 import ProfileView from "./pages/profile/views";
 import { userAtom } from "./store/auth";
 import { useAtom } from "jotai";
+import CreateBlog from "./pages/create-blog/create-blog";
 
 const App: React.FC = () => {
   // const { handleSetUser } = useAuthContext();
@@ -66,6 +67,7 @@ const App: React.FC = () => {
               <Route path="/about" element={<AboutView />} />
               <Route path="/author" element={<AuthorView />} />
               <Route path="/profile" element={<ProfileView />} />
+              <Route path="/create-blog" element={<CreateBlog />} />
             </Route>
             <Route path="/" element={<Navigate to="/" />} />
 

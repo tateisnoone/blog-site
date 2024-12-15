@@ -14,6 +14,11 @@ import { Controller, useForm } from "react-hook-form";
 import qs from "qs";
 import underscore from "underscore";
 import { useSearchParams } from "react-router-dom";
+import dayjs from "dayjs";
+import relativeTime from "dayjs/plugin/relativeTime";
+
+dayjs.extend(relativeTime);
+
 interface myCardProps {
   width: string;
 }
@@ -35,11 +40,12 @@ type blogSearchFormValue = {
 
 const MyCard: React.FC<myCardProps> = ({ width }) => {
   const [blog, setBlog] = useState<blogValueTypes[]>();
-  const [searchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const parsedQueryParams = qs.parse(searchParams.toString());
   const { control, watch } = useForm<blogSearchFormValue>({
     defaultValues: parsedQueryParams,
   });
+
   useEffect(() => {
     const parsedSearchParams = qs.parse(searchParams.toString());
 
@@ -75,7 +81,19 @@ const MyCard: React.FC<myCardProps> = ({ width }) => {
     if (watchedSearchText?.length > 2) {
       fetchBlogs(watchedSearchText);
     }
+    setSearchParams({ searchText: watchedSearchText });
   }, [watchedSearchText, fetchBlogs]);
+
+  const formatCreatedAt = (createdAt: string) => {
+    const now = dayjs();
+    const blogDate = dayjs(createdAt);
+
+    if (now.diff(blogDate, "day") < 1) {
+      return blogDate.fromNow();
+    } else {
+      return blogDate.format("HH:mm - DD/MM/YYYY");
+    }
+  };
 
   return (
     <>
@@ -116,7 +134,7 @@ const MyCard: React.FC<myCardProps> = ({ width }) => {
                   <NavLink to="/author" className="hover:underline">
                     John Doe,
                   </NavLink>{" "}
-                  {blog.created_at}
+                  {formatCreatedAt(blog.created_at)}
                 </CardDescription>
               </CardHeader>
               <CardContent>

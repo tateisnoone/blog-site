@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import { useMutation } from "@tanstack/react-query";
 import { login } from "../../supabase/auth";
 import { useForm } from "react-hook-form";
+import { DASHBOARD_PATHS } from "@/routes/dashboard/index.enum";
 
 const SignIn: React.FC<PropsWithChildren> = () => {
   const { t } = useTranslation();
@@ -78,7 +79,10 @@ const SignIn: React.FC<PropsWithChildren> = () => {
           </NavLink>
           <p className="text-slate-900">
             {t("sign-in.HaveAccount")}
-            <NavLink to="/sign-up" className="text-blue-500 hover:underline ">
+            <NavLink
+              to={DASHBOARD_PATHS.SIGN_UP}
+              className="text-blue-500 hover:underline "
+            >
               {t("sign-in.Sign-Up")}
             </NavLink>
           </p>

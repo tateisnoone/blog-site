@@ -46,6 +46,7 @@ const CreateBlogForm = () => {
             image_url: res.data?.fullPath,
             user_id: user?.user?.id,
           });
+          
         })
         .then(() => {
           setShowAlert(true);

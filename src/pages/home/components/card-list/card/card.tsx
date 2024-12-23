@@ -7,15 +7,17 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { NavLink } from "react-router-dom";
-import { useCallback, useEffect, useState } from "react";
-import { supabase } from "@/supabase";
+
 import { Command } from "@/components/ui/command";
 import { Controller, useForm } from "react-hook-form";
 import qs from "qs";
-import underscore from "underscore";
 import { useSearchParams } from "react-router-dom";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
+import { useQuery } from "@tanstack/react-query";
+import { getBlogs, getBlogsBySearch } from "@/supabase/blog";
+import { DASHBOARD_PATHS } from "@/routes/dashboard/index.enum";
+import { useDebounce } from "@uidotdev/usehooks";
 
 dayjs.extend(relativeTime);
 
@@ -23,66 +25,31 @@ interface myCardProps {
   width: string;
 }
 
-type blogValueTypes = {
-  created_at: string;
-  id: number;
-  user_id: string;
-  title: string;
-  title_ge: string;
-  description: string;
-  description_ge: string;
-  image_url: string;
-};
+
 
 type blogSearchFormValue = {
   searchText: string;
 };
 
 const MyCard: React.FC<myCardProps> = ({ width }) => {
-  const [blog, setBlog] = useState<blogValueTypes[]>();
   const [searchParams, setSearchParams] = useSearchParams();
   const parsedQueryParams = qs.parse(searchParams.toString());
   const { control, watch } = useForm<blogSearchFormValue>({
     defaultValues: parsedQueryParams,
   });
 
-  useEffect(() => {
-    const parsedSearchParams = qs.parse(searchParams.toString());
+  const searchText = watch("searchText");
 
-    const searchText = parsedSearchParams?.searchText;
+  const [debouncedSearchText] = useDebounce(searchText, 1000);
 
-    supabase
-      .from("blog")
-      .select("*")
-      .ilike("title", `%${searchText ?? ""}%`)
-      .throwOnError()
-      .then((res) => {
-        const blogsList = res.data as unknown as blogValueTypes[];
-        setBlog(blogsList);
-      });
-  }, []);
-  const watchedSearchText = watch("searchText");
+  const { data: blogsData } = useQuery({
+    queryKey: ["blogs", debouncedSearchText],
+    queryFn: () =>
+      searchText ? getBlogsBySearch(`%${searchText}%`) : getBlogs(),
+    enabled: true,
+  });
 
-  const fetchBlogs = useCallback(
-    underscore.debounce((watchedSearchText: string) => {
-      supabase
-        .from("blog")
-        .select("*")
-        .ilike("title", `${watchedSearchText}%`)
-        .throwOnError()
-        .then((res) => {
-          const blogsList = res.data as unknown as blogValueTypes[];
-          setBlog(blogsList);
-        });
-    }, 500),
-    []
-  );
-  useEffect(() => {
-    if (watchedSearchText?.length > 2) {
-      fetchBlogs(watchedSearchText);
-    }
-    setSearchParams({ searchText: watchedSearchText });
-  }, [watchedSearchText, fetchBlogs]);
+  setSearchParams({ searchText: searchText });
 
   const formatCreatedAt = (createdAt: string) => {
     const now = dayjs();
@@ -114,7 +81,7 @@ const MyCard: React.FC<myCardProps> = ({ width }) => {
             }}
           />
         </Command>
-        {blog?.map((blog) => {
+        {blogsData?.map((blog) => {
           const blogImageUrl = blog?.image_url
             ? `${import.meta.env.VITE_SUPABASE_BLOG_IMAGES_STORAGE_URL}/${
                 blog?.image_url
@@ -131,7 +98,10 @@ const MyCard: React.FC<myCardProps> = ({ width }) => {
                 </div>
                 <CardTitle>{blog?.title}</CardTitle>
                 <CardDescription>
-                  <NavLink to="/author" className="hover:underline">
+                  <NavLink
+                    to={DASHBOARD_PATHS.FOR_AUTHOR}
+                    className="hover:underline"
+                  >
                     John Doe,
                   </NavLink>{" "}
                   {formatCreatedAt(blog.created_at)}

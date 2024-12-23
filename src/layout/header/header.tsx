@@ -20,6 +20,7 @@ import { userAtom } from "@/store/auth";
 import { useEffect, useState } from "react";
 import { getProfileInfo } from "@/supabase/profile";
 import { PostgrestSingleResponse } from "@supabase/supabase-js";
+import { DASHBOARD_PATHS } from "@/routes/dashboard/index.enum";
 
 type ProfileData = {
   avatar_url: string | null;
@@ -69,10 +70,13 @@ const Header = () => {
             <a className="text-gray-500 hover:text-gray-800" href="/">
               {t("header-page.Home")}
             </a>
-            <a className="text-gray-500 hover:text-gray-800" href="/write">
+            <a className="text-gray-500 hover:text-gray-800" href="/">
               {t("header-page.Write")}
             </a>
-            <NavLink to="/about" className="text-gray-500 hover:text-gray-800">
+            <NavLink
+              to={DASHBOARD_PATHS.FOR_ABOUT}
+              className="text-gray-500 hover:text-gray-800"
+            >
               {t("header-page.About")}
             </NavLink>
           </nav>
@@ -80,7 +84,7 @@ const Header = () => {
         <div className="w-96 flex justify-between">
           {user ? (
             <>
-              <NavLink to="create-blog">
+              <NavLink to={DASHBOARD_PATHS.CREATE_BLOG}>
                 <Button className="bg-blue-500 hover:bg-blue-400 text-base font-sans">
                   {t("header-page.CreateBlog")}
                 </Button>
@@ -95,7 +99,7 @@ const Header = () => {
                 <DropdownMenuContent className="font-sans">
                   <DropdownMenuLabel>My Account</DropdownMenuLabel>
                   <DropdownMenuSeparator />
-                  <NavLink to="/profile">
+                  <NavLink to={DASHBOARD_PATHS.FOR_PROFILE}>
                     <DropdownMenuItem>Profile</DropdownMenuItem>
                   </NavLink>
 
@@ -106,7 +110,7 @@ const Header = () => {
               </DropdownMenu>
             </>
           ) : (
-            <NavLink to="sign-in">
+            <NavLink to={DASHBOARD_PATHS.SIGN_IN}>
               <Button className="bg-blue-500 hover:bg-blue-400 text-base font-sans">
                 {t("header-page.SignIn")}
               </Button>
